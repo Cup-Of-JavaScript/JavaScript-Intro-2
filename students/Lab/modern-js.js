@@ -2,15 +2,15 @@
 // File: modern-js.js
 // Date: 5/30/2022
 // Desc: Modernize this legacy JavaScript:
-//       - Replace ALL fuctions with arrow functions (this includes sort)
+//       - Replace ALL functions with arrow functions (this includes the sort callback function)
 //       - Replace var with let or const.
 //
 
 function displayResults(personList, count) {
     var count = 0;
-    count = personList.length
-    console.table(personList)
-    console.log("There are " + count + " people in the list.")
+    count = personList.length;
+    console.table(personList);
+    console.log("There are " + count + " people in the list.");
 }
 
 function getData(tableName) {
@@ -28,8 +28,8 @@ function getData(tableName) {
 function main() {
   var table = "person";
   var personList = getData(table);
-  personList.sort(function(a,b){return a.age - b.age})
-  displayResults(personList)
+  personList.sort(function(a,b){return a.age - b.age});
+  displayResults(personList);
 }
 
 main();
