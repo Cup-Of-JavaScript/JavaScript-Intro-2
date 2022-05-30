@@ -1,7 +1,7 @@
 ## Ex. 1
-Modernize the JavaScript file found in `~/students/Lab/modern-js.js`.  Replace the legacy functions with arrow functions and replace the `var` with either `let` or `const`.  Place this file in your student directory.
+Modernize the JavaScript file found in `~/students/Lab/modern-js.js`.  Replace the legacy functions with arrow functions and replace the `var` with either `let` or `const`.  There's a function signature that isn't right. Can you find it and fix it?  :-)
 
-There's a function signature that isn't right. Can you find it and fix it?  :-)
+When you are finished, place this file in your student directory and submit a PR.
 
 ## Ex. 2
 Create an arrow function called `countNumbers` that takes an array and
