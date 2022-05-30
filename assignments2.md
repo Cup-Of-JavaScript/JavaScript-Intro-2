@@ -38,7 +38,7 @@ Output:
 ```
 
 ## Ex. 3
-Create an arrow function named: `shortestString` that returns the longest string from an array of strings:
+Create an arrow function named: `shortestString` that returns the shortest string from an array of strings:
 
 When you are finished submit a PR.
 
@@ -54,13 +54,13 @@ a
 ```
 
 ## Ex. 4
-Create an arrow function named: `countLetters` that counts the number of letters for an array of words:
+Create an arrow function named: `countLetters` that counts the number of letters from an array of words:
 
 When you are finished submit a PR.
 
 Usage:
 ```
-var array = ["this", "is", "a", "test"];
+let array = ["this", "is", "a", "test"];
 console.log(countLetters(array));
 ```
 
@@ -70,9 +70,24 @@ Output:
 ```
 
 ## Ex. 5
-Create an arrow function named: `countIt` that counts the number of integer numbers, decimal numbers and strings from an array.  This arrow function calls the following functions:
+Create an arrow function named: `countIt` that counts the number of integer numbers, decimal numbers and strings from an array.  The `countIt` function returns nothing and writes output to the terminal.
+
+This arrow function calls the following functions:
   - `countNumbers`
   - `countStrings`
   - `countDecimals`
 
 When you are finished submit a PR.
+
+Usage:
+```
+let array = ["this", "is", 1, 3, 2.1, "a", "test"];
+countIt(array));
+```
+
+Output:
+```
+Number of Integers: 4
+Number of Decimal Numbers: 2
+Number of Strings: 4 
+```
