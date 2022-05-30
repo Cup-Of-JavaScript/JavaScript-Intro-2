@@ -1,6 +1,11 @@
 ## Ex. 1
+Modernize the JavaScript file found in `~/students/Lab/modern-js.js`.  Replace the legacy functions with arrow functions and replace the `var` with either `let` or `const`.  Place this file in your student directory.
+
+There's a function signature that isn't right. Can you find it and fix it?  :-)
+
+## Ex. 2
 Create an arrow function called `countNumbers` that takes an array and
-returns the number of numbers in it.
+returns the number of numbers that only contain decimal points.
 
 Usage:
 ```
@@ -10,14 +15,14 @@ console.log(countNumbers(array));
 
 Output:
 ```
-3
+1
 ```
 
 ## Ex. 2
 Create an arrow function called `minNumber` that takes an array of numbers and
 returns the lowest number.  The function must use a for loop.
 
-Usage:
+Usage #1:
 ```
 const array = [12, 55, 2, 22, 11];
 console.log(minNumber(array));
@@ -27,6 +32,15 @@ Output:
 ```
 2
 ```
+
+
+
+
+
+
+
+
+
 
 ## Ex. 3
 Create an arrow function called `interleave` that accepts two arrays and interleave them.  The function returns the following error string if the two arrays have a different length:  `ERROR: Array length mismatch`
