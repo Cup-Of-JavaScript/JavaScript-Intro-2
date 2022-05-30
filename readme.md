@@ -1,5 +1,5 @@
 # Modern JavaScript for React Developers
-Assignment repo that describes modern JavaScript with a focus on frontend React development.  Assignments are located [here](./assignments.md).
+Assignment repo that describes modern JavaScript with a focus on frontend React development.  Assignments are located [here](./assignments2.md).
 
 [ES 6 new features](https://www.w3schools.com/js/js_es6.asp)
 
