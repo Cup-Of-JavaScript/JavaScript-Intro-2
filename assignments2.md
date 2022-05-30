@@ -74,3 +74,5 @@ Create an arrow function named: `countIt` that counts the number of integer numb
   - `countNumbers`
   - `countStrings`
   - `countDecimals`
+
+When you are finished submit a PR.
