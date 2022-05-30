@@ -72,10 +72,10 @@ Output:
 ## Ex. 5
 Create an arrow function named: `countIt` that counts the number of integer numbers, decimal numbers and strings from an array.  The `countIt` function returns nothing and writes output to the terminal.
 
-This arrow function calls the following functions:
-  - `countNumbers`
+This arrow function calls the following arrow functions:
+  - `countIntegerNumbers`
   - `countStrings`
-  - `countDecimals`
+  - `countDecimalNumbers`
 
 When you are finished submit a PR.
 
