@@ -1,7 +1,6 @@
 # Modern JavaScript for React Developers
 Assignment repo that describes modern JavaScript with a focus on frontend React development.  Assignments are located [here](./assignments-2.md).
 
-- [ES 6 new features](https://www.w3schools.com/js/js_es6.asp)
 - [Git Workflow](./github.md)
 
 # Getting Started 
@@ -15,6 +14,7 @@ Assignment repo that describes modern JavaScript with a focus on frontend React 
 - JavaScript has [two types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures): 
   - Primitive types: (null, undefined, Boolean, Number, String, Symbol, and BigInt)
   - Reference types: (objects)
+- [ES 6 new features](https://www.w3schools.com/js/js_es6.asp)
 
 # Videos
 - [JavaScript Crash Course For Beginners (1h 40m)](https://youtu.be/hdI2bqOjy3c)
