@@ -10,4 +10,4 @@ My favorite band is Moses Bliss...
 
 My favorite holiday is christmas.
 
-My favorite season is winter
+My favorite season is Winter.
