@@ -25,10 +25,10 @@ const getData = (tableName) => {
   return retval;
 }
 
-const main = {} = {
+const main = () => {
   let table = "person";
   let personList = getData(table);
-  personList.sort(function(a,b){return a.age - b.age});
+  personList.sort((a,b) => return a.age - b.age);
   displayResults(personList);
 }
 
