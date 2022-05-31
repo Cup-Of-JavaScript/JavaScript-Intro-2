@@ -6,3 +6,5 @@ My favorite color is navy blue.
 My favorite food is tacos.
 
 My fav band is linkin park.
+
+My favorite holiday is July 4th.
