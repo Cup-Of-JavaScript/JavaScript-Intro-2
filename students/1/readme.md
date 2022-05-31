@@ -9,4 +9,5 @@ My favorit band is System of a Down.
 
 My favorite holiday is Halloween.
 
-My favorite season is Fall (scorpio season).
+My favorite season is FALL (scorpio season).
+
