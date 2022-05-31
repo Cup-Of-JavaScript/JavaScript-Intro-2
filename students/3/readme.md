@@ -8,3 +8,5 @@ Mu favorite food is everything!!
 My favorite band is Destiny's Child
 
 My favorite holiday's are Halloween and Christmas.
+
+My favorite season is FALL
