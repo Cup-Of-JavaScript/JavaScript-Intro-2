@@ -2,13 +2,19 @@
 Assignment repo that describes modern JavaScript with a focus on frontend React development.  Assignments are located [here](./assignments-2.md).
 
 - [ES 6 new features](https://www.w3schools.com/js/js_es6.asp)
-- [Git Reference](./github.md)
+- [Git Workflow](./github.md)
 
 # Getting Started 
 - Install prerequisites
   - NodeJS
   - VSCode
 - Clone this repo
+
+# JavaScript
+- Functions are first class citizens in JavaScript
+- JavaScript has [two types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures): 
+  - Primitive types: (null, undefined, Boolean, Number, String, Symbol, and BigInt)
+  - Reference types: (objects)
 
 # Videos
 - [JavaScript Crash Course For Beginners (1h 40m)](https://youtu.be/hdI2bqOjy3c)
@@ -55,17 +61,3 @@ Assignment repo that describes modern JavaScript with a focus on frontend React 
 - [String Methods](https://www.w3schools.com/js/js_string_methods.asp)
 - [String Search](https://www.w3schools.com/js/js_string_search.asp)
 - [Array](https://www.w3schools.com/js/js_arrays.asp)
-
-
-# JavaScript
-- Functions are first class citizens in JavaScript
-- JavaScript has [two types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures): 
-  - Primitive types: (null, undefined, Boolean, Number, String, Symbol, and BigInt)
-  - Reference types: (objects)
-
-# DOM Manipulation
-- Document Object Model (DOM)
-- JavaScript can be use to manipulate the DOM, but in general we shouldn't do this in our React applications because React manages the DOM for us
-
-# Developing Apps for the Browser
-- The modern web browser is a highly sophisticated tool for rendering web pages and executing JavaScript
