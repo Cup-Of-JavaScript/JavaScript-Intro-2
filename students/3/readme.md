@@ -4,3 +4,5 @@ My name is Antionette L Van welcome to my student directory.
 My favorite color is pink.
 
 Mu favorite food is everything!!
+
+My favorite band is Destiny's Child
