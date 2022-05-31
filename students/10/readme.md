@@ -9,4 +9,4 @@ My favorite band is GAP band
 
 My favorite holiday is Thanksgiving
 
-My favorite season is Florida
+My favorite season is Florida.
