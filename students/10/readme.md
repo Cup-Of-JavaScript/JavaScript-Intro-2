@@ -6,3 +6,5 @@ My favorite color is blue
 My favorite food is spaghetti and meatballs
 
 My favorite band is GAP band
+
+My favorite holiday is Thanksgiving
