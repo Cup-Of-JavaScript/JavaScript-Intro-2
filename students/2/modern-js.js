@@ -6,8 +6,8 @@
 //       - Replace var with let or const.
 //
 
-const displayResults = (personList, count) => {
-    //let count = 0;
+const displayResults = (personList) => {
+    let count = 0;
     count = personList.length;
     console.table(personList);
     console.log("There are " + count + " people in the list.");
@@ -28,7 +28,7 @@ const getData = (tableName) => {
 const main = () => {
   let table = "person";
   let personList = getData(table);
-  personList.sort((a,b) => {return a.age - b.age});
+  personList.sort((a,b) => a.age - b.age);
   displayResults(personList);
 }
 
