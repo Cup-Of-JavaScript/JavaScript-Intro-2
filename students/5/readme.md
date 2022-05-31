@@ -9,3 +9,5 @@ My favorite food is Eru.
 My favorite band is Moses Bliss...
 
 My favorite holiday is christmas.
+
+My favorite season is Winter.
