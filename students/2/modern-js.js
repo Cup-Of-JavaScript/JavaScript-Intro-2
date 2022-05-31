@@ -6,15 +6,15 @@
 //       - Replace var with let or const.
 //
 
-function displayResults(personList, count) {
-    var count = 0;
+const displayResults = (personList, count) => {
+    //let count = 0;
     count = personList.length;
     console.table(personList);
     console.log("There are " + count + " people in the list.");
 }
 
-function getData(tableName) {
-  var retval = "No Data";
+const getData = (tableName) => {
+  let retval = "No Data";
   if (tableName == "person") {
     retval = [
       { firstName: "Alice", lastName: "Jones", age: 10 },
@@ -25,10 +25,10 @@ function getData(tableName) {
   return retval;
 }
 
-function main() {
-  var table = "person";
-  var personList = getData(table);
-  personList.sort(function(a,b){return a.age - b.age});
+const main = () => {
+  let table = "person";
+  let personList = getData(table);
+  personList.sort((a,b) => {return a.age - b.age});
   displayResults(personList);
 }
 
