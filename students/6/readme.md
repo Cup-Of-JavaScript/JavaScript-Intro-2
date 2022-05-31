@@ -6,3 +6,5 @@ My favorite color is green.
 I like pizza.
 
 My favorite band is Bone Thugs-n-Harmony
+
+My favorite holiday is christmas.
