@@ -10,7 +10,7 @@
 - [Atlassian What is Git?](https://www.atlassian.com/git/tutorials/what-is-git)
 - [How Teams Use GitHub](./docs/Intro-to-GitHub.pptx) (Download only)
 - [Atlassian Git Cheat Sheet](./docs/SWTM-2088_Atlassian-Git-Cheatsheet.pdf)
-- [Reference](https://git-scm.com/docs)
+- [Official Git Reference](https://git-scm.com/docs)
 
 # Primary Workflow
 - Identify the branch you are on: `git branch`
