@@ -6,4 +6,4 @@ My favorite color is purple.
 
 My favorite food is Eru. 
 
-My favorite band is Moses Bliss!
+My favorite band is Moses Bliss.
