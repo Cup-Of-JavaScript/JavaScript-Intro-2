@@ -23,6 +23,7 @@ const getData=(tableName)=> {
     ];
   }
   return retval;
+  
 }
 
 let main =() => {
