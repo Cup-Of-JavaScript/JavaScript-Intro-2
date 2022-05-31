@@ -8,3 +8,6 @@ I like pizza.
 My favorite band is Bone Thugs-n-Harmony
 
 My favorite holiday is christmas.
+
+My favorite season is fall.
+
