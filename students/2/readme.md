@@ -9,4 +9,4 @@ My fav band is linkin park.
 
 My favorite holiday is July 4th.
 
-My favorite season is fall.
+My favorite season is Fall.
