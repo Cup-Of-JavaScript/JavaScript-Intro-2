@@ -6,7 +6,7 @@
 //       - Replace var with let or const.
 //
 
-const displayResults= (personList, count) => {
+const displayResults= (personList) => {
     let count = 0;
     count = personList.length;
     console.table(personList);
@@ -15,7 +15,7 @@ const displayResults= (personList, count) => {
 
 const getData = (tableName) => {
   let retval= "no data";
-  if(tablename=="person"){
+  if(tableName=="person") {
   retval = [
       { firstName: "Alice", lastName: "Jones", age: 10 },
       { firstName: "Bob", lastName: "Smith", age: 7 },
@@ -28,7 +28,7 @@ const getData = (tableName) => {
 const main = () => {
   let table = "person";
   let personList = getData(table);
-  personList.sort((a,b) => return a.age - b.age);
+  personList.sort((a,b) => a.age - b.age);
   displayResults(personList);
 }
 
