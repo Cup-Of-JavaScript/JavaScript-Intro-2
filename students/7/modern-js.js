@@ -6,9 +6,9 @@
 //       - Replace var with let or const.
 //
 
-const displayResults = (personList, count) => {
+const displayResults = (personList) => {
     //let count = 0;
-    count = personList.length;
+   let count = personList.length;
     console.table(personList);
     console.log("There are " + count + " people in the list.");
 }
