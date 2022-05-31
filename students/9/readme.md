@@ -8,3 +8,5 @@ My favorite food is Ground Turkey
 My favorite band is The Loose Ends
 
 My favorite holiday is Martin Luther King Day
+
+My favorite season is Fall
