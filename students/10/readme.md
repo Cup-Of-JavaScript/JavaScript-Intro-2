@@ -1,2 +1,2 @@
 # Student Readme
-My name is ... welcome to my student directory.
+My name is Sherika Fayson welcome to my student directory.
