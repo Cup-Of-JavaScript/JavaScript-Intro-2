@@ -26,7 +26,8 @@
 - Push to GitHub: `git push origin YOUR_BRANCH_NAME`
 - ProTip:  chain all these commands: `git add --all && git commit -m "YOUR_MESSAGE_HERE" && git push origin YOUR_BRANCH_NAME`
 - Create Pull Request (PR)
-- Merge PR
+- Wait for team lead to review PR
+- Once PR has been reviewed, team lead (or you) will merge PR
 - Update your local dev branch: `git checkout dev && git pull origin dev`
 - Delete your local branch that you just pushed: `git branch -D YOUR_BRANCH_NAME`
 
