@@ -9,4 +9,4 @@ We know my favorite band is Depeche Mode.   But I'm good with Tears for Fears an
 
 My favorite holiday is Halloween.
 
-My favorite season is Winter.
+My favorite season is WINTER.
