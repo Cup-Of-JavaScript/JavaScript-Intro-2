@@ -18,6 +18,7 @@
 - Once PR has been reviewed, team lead (or you) merges PR
 - Update your local dev branch: `git checkout dev && git pull origin dev`
 - Delete your local branch that you just pushed: `git branch -D YOUR_BRANCH_NAME`
+- Repeat
 
 # Videos
 - [Git Tutorial for Beginners: Learn Git in (1h)](https://youtu.be/8JJ101D3knE)
