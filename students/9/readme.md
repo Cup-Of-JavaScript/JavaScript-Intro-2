@@ -9,4 +9,4 @@ My favorite band is The Loose Ends
 
 My favorite holiday is Martin Luther King Day
 
-My favorite season is Fall
+My favorite season is Fall.
