@@ -28,7 +28,7 @@ const getData = (tableName) => {
 const main = () => {
   let table = "person";
   let personList = getData(table);
-  personList.sort((a,b) => {return a.age - b.age});
+  personList.sort((a,b) => a.age - b.age);
   displayResults(personList);
 }
 
