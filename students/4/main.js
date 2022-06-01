@@ -4,7 +4,8 @@
 // 
 
 const ex1 = () => {
-   
+    const array = [1, '2', 3, 'test', 1.2];
+    console.log(countNumbers(array));
 }
 
 const ex2 = () => {
@@ -12,6 +13,14 @@ const ex2 = () => {
 }
 
 const ex3 = () => {
+
+}
+
+const ex4 = () => {
+
+}
+
+const ex5 = () => {
 
 }
 
