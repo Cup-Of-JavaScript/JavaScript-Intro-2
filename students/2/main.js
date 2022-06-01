@@ -18,6 +18,15 @@ const ex3 = () => {
 //
 // Your functions here...
 //
+const minNumber = (array) => {
+    let lowestVal = array[0];
+    for (let i of array){
+        if (typeof(i) == "number" && i < lowestVal) {
+            lowestVal = i
+        }
+    } return lowestVal
+}
+
 const countNumbers = (array) => {
     let count = 0
     for (let i of array) {
@@ -30,9 +39,8 @@ const countNumbers = (array) => {
     return count;
 }
 
-
 const main = async () => {
-    ex1();
+    ex2();
 }
 
 main();
