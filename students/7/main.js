@@ -21,7 +21,12 @@ const countNumbers = (array) => {
 
 
 const ex2 = () => {
+    const array = [12, 55, "2", 22, 11, true];
+    console.log(minNumber(array));
+}
 
+const minNumber = () => {
+    
 }
 
 const ex3 = () => {
