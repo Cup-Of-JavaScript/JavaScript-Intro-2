@@ -3,7 +3,7 @@
 // Date: 5/24/2022
 // 
 
-const ex1 = (array) => {
+const ex1 = () => {
     const array = [1, '2', 3, 'test', 1.2];
     console.log(countNumbers(array));
 }
@@ -25,10 +25,12 @@ const ex3 = () => {
 const countNumbers = (array) => {
     let retval = 0;
     for (let i of array) {
-      if (typeof(i) =='number') {
-        retval++;
-      }
-    } 
+        if (typeof (i) == 'number') {
+            if (!Number.isInteger(i) ) {
+                retval++;
+            }
+        }
+    }
     return retval;
 }
 
