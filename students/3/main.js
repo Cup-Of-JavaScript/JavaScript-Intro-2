@@ -9,6 +9,8 @@ const ex1 = () => {
 }
 
 const ex2 = () => {
+    const array = [12, 55, "2", 22, 11, true];
+    console.log(minNumber(array));
 
 }
 
