@@ -18,17 +18,7 @@ const countNumbers = (array) => {
     return count;
 }
 
-//Hard Coded Method:
 
-// const countNumbers = (array) => {
-//     let count = 0;
-//     for (let i = 0; i < array.length; i++){
-//         if(array[i]==1.2){
-//             count+= 1;
-//         }
-//     }
-//     return count;
-// }
 
 const ex2 = () => {
 
