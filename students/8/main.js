@@ -14,12 +14,29 @@ const ex2 = () => {
 }
 
 const ex3 = () => {
-
+    const array = ['this', 'is', 'a', 'test', 'happy'];
+    console.log(shortestString(array));
 }
 
 //
 // Your functions here...
 //
+
+
+//Ex 3
+
+const shortestString = (array) => {
+    let lgth = array[0].length;
+    let shortest;    
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].length < lgth) {
+        let lgth = array[i].length;
+        shortest = array[i];
+      }
+    }
+    return shortest;
+}
+
 
 //Ex 2
 
@@ -50,7 +67,7 @@ const countNumbers = (array) => {
 
 
 const main = async () => {
-    ex2();
+    ex3();
 }
 
 main();
