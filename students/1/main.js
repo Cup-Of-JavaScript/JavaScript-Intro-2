@@ -21,6 +21,15 @@ const ex3 = () => {
 // Your functions here...
 //
 
+let minNumber = (array) => {
+    let results = array[0];
+    for (let i of array){
+        if (typeof(i) == "number" && i < results){
+            results = i;
+        }
+    } 
+    return results;
+}
 let countNumbers = (array) => {
     let retval = 0;
     for (let i of array) {
