@@ -13,8 +13,8 @@ const countNumbers = (array) => {
     array.forEach( i => {
         if(typeof(i)== 'number' && !Number.isInteger(i)) {
                 count++
-            }
-        })
+        }
+    })
     return count;
 }
 
