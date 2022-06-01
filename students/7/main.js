@@ -27,15 +27,16 @@ const ex2 = () => {
 }
 
 const minNumber = (array) => {
-     let lowestVal = array[0];
-   
-    for(let i=1; i<array.length; i++){
-        if(array[i] < lowestVal){
-            lowestVal = array[i];   
+    let lowestVal = array[0];
+    
+    for(let i of array){
+        if(i < lowestVal){
+            lowestVal = i;   
         }
-		return lowestVal;
-    }
+    } return lowestVal;
 }
+
+
 
 const ex3 = () => {
 
