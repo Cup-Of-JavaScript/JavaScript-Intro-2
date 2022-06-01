@@ -16,14 +16,6 @@ const ex3 = () => {
 
 }
 
-const ex4 = () => {
-
-}
-
-const ex5 = () => {
-
-}
-
 //
 // Your functions here...
 //
