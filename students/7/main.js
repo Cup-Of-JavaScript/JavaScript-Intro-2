@@ -4,17 +4,17 @@
 // 
 
 const ex1 = () => {
-    const array = [1, '2', 3, 'test', 1.2, 4.6];
+    const array = [1, '2', 3, 'test', 1.2];
     console.log(countNumbers(array));
 }
 
 const countNumbers = (array) => {
     let count = 0;
-    for (let i = 0; i < array.length; i++){
+    array.forEach( i => {
         if(typeof(i)== 'number' && !Number.isInteger(i)) {
                 count++
             }
-        }
+        })
     return count;
 }
 
