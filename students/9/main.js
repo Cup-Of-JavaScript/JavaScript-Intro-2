@@ -2,6 +2,8 @@
 // File: main.js
 // Date: 5/24/2022
 // 
+const array = [1, '2', 3, 'test', 1.2];
+console.log(countNumbers(array));
 
 const ex2 = () => {
     const array = [12, 55, "2", 22, 11, true];
