@@ -19,26 +19,32 @@ const countNumbers = (array) => {
 }
 
 
+//Create an arrow function called minNumber that takes an array of numbers and returns the lowest number. The function must use a for loop and must ignore data types that are of type string or boolean.
 
 const ex2 = () => {
-    const array = [12, 55, "2", 22, 11, true];
+    const array = [12, 55, 22, 11];
     console.log(minNumber(array));
 }
 
-const minNumber = () => {
-    
+const minNumber = (array) => {
+     let lowestVal = array[0];
+   
+    for(let i=1; i<array.length; i++){
+        if(array[i] < lowestVal){
+            lowestVal = array[i];   
+        }
+		return lowestVal;
+    }
 }
 
 const ex3 = () => {
 
 }
 
-//
-// Your functions here...
-//
+
 
 const main = async () => {
-    ex1();
+    ex2();
 }
 
 main();
