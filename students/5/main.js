@@ -88,9 +88,9 @@ const shortestString = (str) => {
 //exercise 4
 const countLetters = (array) => {
     let newArray = array.join('');
-    newArray;
     return newArray.length
-}
+}   
+
 
 
 const main = async () => {
