@@ -26,11 +26,13 @@ const ex4 = () => {
 
 
 
+const countLetters = (array) => {
+    const retval = 0
+        for(let i=0; i<array.length; i++);
+        retval++;
+    return retval;
 
-
-
-
-
+}
 
 
 const shortestString = (array) => {
@@ -65,7 +67,7 @@ const countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex3();
+    ex4();
 }
 
 main();
