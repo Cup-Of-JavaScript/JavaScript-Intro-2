@@ -34,6 +34,10 @@ const ex5 = () => {
 
 let countIt = (array) => {
     let results = 0 
+    for (let i=0; i <; i++){
+
+    }
+    return results
 }
 
 let countLetters = (array) => {
