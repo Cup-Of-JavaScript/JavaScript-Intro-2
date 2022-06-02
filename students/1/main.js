@@ -18,9 +18,19 @@ const ex3 = () => {
     console.log(shortestString(array));
 }
 
+const ex4 = () => {
+    let array = ["this", "is", "a", "test"];
+    console.log(countLetters(array));
+}
+
 //
 // Your functions here...
 //
+
+let countLetters = (array) => {
+    let finval = 
+
+}
 
 let shortestString = (array) => {
     let value = array.sort((a,b) => a.length + b.length)
@@ -48,7 +58,7 @@ let countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex3();
+    ex4();
 }
 
 main();
