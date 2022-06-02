@@ -28,8 +28,11 @@ const ex4 = () => {
 //
 
 let countLetters = (array) => {
-    let finval = 
-
+    let finval = 0
+    for(let i = 0; i < 4; i++){
+        finval += array[i].length          
+    }
+    return finval
 }
 
 let shortestString = (array) => {
