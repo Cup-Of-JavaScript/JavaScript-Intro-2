@@ -32,7 +32,6 @@ const ex4 = () => {
 // EX 4
 const countLetters = (array) => {
     let newArray = array.join ('');
-    newArray;
     return newArray.length;
 }
 
