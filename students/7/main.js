@@ -54,7 +54,12 @@ const ex3 = () => {
  
 
 const ex4 = () => {
+    let array = ["this", "is", "a", "test"];
+    console.log(countLetters(array));
+}
 
+const countLetters = () => {
+    
 }
 
 const ex5 = () => {
