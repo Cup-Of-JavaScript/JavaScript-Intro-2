@@ -27,21 +27,19 @@ const ex4 = () => {
 
 
 const countLetters = (array) => {
-    const retval = 0
-        for(let i=0; i<array.length; i++);
-        retval++;
-    return retval;
-
+    let counter = 0;
+    for(let i=0; i<array.length; i++){
+        counter +=  array[i].length   
+    }
+    return counter;
 }
 
 
 const shortestString = (array) => {
-    let retval = array.sort((a, b) => b.length - a.length);
-    return retval[array.length - 1];
+    let retval = array.sort((a,b) => b.length - a.length);
+       return retval[array.length - 1];
 
 }
-
-
 
 
 const minNumber = (array) => {
@@ -67,7 +65,7 @@ const countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex4();
+   ex4();
 }
 
 main();
