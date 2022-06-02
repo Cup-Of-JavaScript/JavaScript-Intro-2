@@ -3,15 +3,22 @@
 // Date: 5/24/2022
 //
 
-const ex1 = () => {
-  const array = [1, "2", 3, "test", 1.2];
-  console.log(countNumbers(array));
-};
+  const ex1 = () => {
+    const array = [1, "2", 3, "test", 1.2];
+    console.log(countNumbers(array));
+  };
 
-const ex2 = () => {
-  const array = [12, 55, "2", 22, 11, true];
-  console.log(minNumber(array));
-};
+  const ex2 = () => {
+    const array = [12, 55, "2", 22, 11, true];
+    console.log(minNumber(array));
+  };
+
+  const ex3 = () => {
+    const array = ['this', 'is', 'a', 'test', 'happy'];
+    console.log(shortestString(array));
+   };
+
+
 
 //
 // Your functions here...
@@ -38,9 +45,14 @@ const minNumber = (array) => {
   }
   return lowestval;
 };
+     
+const shortestString= (array) => {
+   let retval= array.sort((a,b)=> b.length- a.length);
+   return retval[array.length- 1]
+};
 
 const main = async () => {
-  ex2();
+  ex3();
 };
 
 main();
