@@ -59,11 +59,11 @@ const ex4 = () => {
 }
 
 const countLetters = (array) => {
-   let count = 0;
-   for (let i = 0; i < array.length; i++) 
-   if (array[i] === " ") { 
-        count = +1; 
-    } return count += 1;
+    let numLetters = 0;
+    for (let word of array) {
+        numLetters += word.length
+    }
+    return numLetters;
 }
 
 const ex5 = () => {
