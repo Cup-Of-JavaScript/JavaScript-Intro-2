@@ -35,15 +35,35 @@ const minNumber = (array) => {
 }
 
 
-
 const ex3 = () => {
+    const array = ['this', 'is', 'a', 'test', 'happy'];
+     console.log(shortestString(array));
+     
+ }
+ 
+ const shortestString = (array) => {
+     let stringVal = array[0].length;;
+     let shortest;
+     for (let i = 0; i < array.length; i++) {
+         if (array[i].length < stringVal) {
+              stringVal = array [i].length;
+             shortest = array[i];
+         }
+     } return shortest;
+ }
+ 
+
+const ex4 = () => {
+
+}
+
+const ex5 = () => {
 
 }
 
 
-
 const main = async () => {
-    ex2();
+    ex3();
 }
 
 main();
