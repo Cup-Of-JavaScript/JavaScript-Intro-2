@@ -19,9 +19,16 @@ const ex3 = () => {
     console.log(shortestString(array));
 }
 
+const ex4 = () => {
+    let array = ["this", "is", "a", "test"];
+    console.log(countLetters(array));
+}
+
 //
 // Your functions here...
 //
+
+
 
 // EX 3
 const shortestString = (array) => {
