@@ -58,8 +58,12 @@ const ex4 = () => {
     console.log(countLetters(array));
 }
 
-const countLetters = () => {
-    
+const countLetters = (array) => {
+   let count = 0;
+   for (let i = 0; i < array.length; i++) 
+   if (array[i] === " ") { 
+        count = +1; 
+    } return count += 1;
 }
 
 const ex5 = () => {
@@ -68,7 +72,7 @@ const ex5 = () => {
 
 
 const main = async () => {
-    ex3();
+    ex4();
 }
 
 main();
