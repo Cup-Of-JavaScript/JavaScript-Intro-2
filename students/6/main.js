@@ -19,6 +19,19 @@ const ex3 = () => {
 }
 
 
+const ex4 = () => {
+    let array = ["this", "is", "a", "test"];
+    console.log(countLetters(array));
+}
+
+
+const countLetters = (array) => {
+    let counter = 0;
+    for(let i=0; i<array.length; i++){
+        counter += array[i].length   
+    }
+    return counter;
+}
 
 
 const shortestString = (array) => {
@@ -26,8 +39,6 @@ const shortestString = (array) => {
        return retval[array.length - 1];
 
 }
-
-
 
 
 const minNumber = (array) => {
@@ -53,7 +64,7 @@ const countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex3();
+   ex4();
 }
 
 main();
