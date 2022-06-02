@@ -34,7 +34,7 @@ const ex5 = () => {
 
 let countIt = (array) => {
     let results = 0 
-    for (let i=0; i <; i++){
+    for (let i=0; i < 5; i++){
 
     }
     return results
@@ -42,7 +42,7 @@ let countIt = (array) => {
 
 let countLetters = (array) => {
     let finval = 0
-    for(let i = 0; i < 4; i++){
+    for(let i = 0; i < array.length; i++){
         finval += array[i].length          
     }
     return finval
