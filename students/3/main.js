@@ -15,7 +15,8 @@ const ex2 = () => {
 }
 
 const ex3 = () => {
-
+    array = ['this', 'is', 'a', 'test', 'happy'];
+    console.log(shortestString(array));
 }
 
 //
