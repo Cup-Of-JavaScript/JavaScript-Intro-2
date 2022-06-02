@@ -23,9 +23,18 @@ const ex4 = () => {
     console.log(countLetters(array));
 }
 
+const ex5 = () => {
+    let array = ["this", "is", 1, 3, 2.1, "a", "test"];
+    countIt(array);
+}
+
 //
 // Your functions here...
 //
+
+let countIt = (array) => {
+    let results = 0 
+}
 
 let countLetters = (array) => {
     let finval = 0
