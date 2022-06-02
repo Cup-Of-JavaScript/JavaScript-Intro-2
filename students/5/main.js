@@ -24,6 +24,11 @@ const exx3 = () => {
     console.log(shortestString(str));
 }
 
+const ex4 = () => {
+    const array = ["this", "is", "a", "test"];
+    console.log(countLetters(array));
+}
+
 //
 // Your functions here...
 
@@ -79,9 +84,18 @@ const shortestString = (str) => {
     }
     return shortestString
 }
+ 
+//exercise 4
+const countLetters = (array) => {
+    let newArray = array.join('');
+    newArray;
+    return newArray.length
+}
+
 
 const main = async () => {
-  exx3();
+  ex4();
+
 };
 
 main();
