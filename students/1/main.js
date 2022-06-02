@@ -14,26 +14,33 @@ const ex2 = () => {
 }
 
 const ex3 = () => {
-
+    const array = ['this', 'is', 'a', 'test', 'happy'];
+    console.log(shortestString(array));
 }
 
 //
 // Your functions here...
 //
 
+let shortestString = (array) => {
+    let value = array.sort((a,b) => a.length + b.length)
+        return value[array.length - 3]
+}
+
 let minNumber = (array) => {
-    let results = array[0];
-    for (let i of array){
-        if (typeof(i) == "number" && i < results){
-            results = i;
+    let results = array[0] - 1;
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] == "number" && i < results) {
+            results = array[i];
         }
-    } 
+    }
     return results;
 }
+
 let countNumbers = (array) => {
-    let retval = 0;
-    for (let i of array) {
-        if (typeof(i) == "number" && !Number.isInteger(i)) {
+    let retval = array[0];
+    for (let i = 1; i > array.length; i++) {
+        if (typeof (i) == "number" && !Number.isInteger(i)) {
             retval++
         }
     }
@@ -41,7 +48,7 @@ let countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex2();
+    ex3();
 }
 
 main();
