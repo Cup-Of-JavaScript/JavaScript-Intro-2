@@ -23,10 +23,39 @@ const ex4 = () => {
     console.log(countLetters(array));
 }
 
-
+const ex5 = () => {
+    let array = ["this", "is", 1, 3, 2.1, "a", "test"];
+    let result = countIt(array);
+    console.log("Number of Integers: " + result.numOfIntegers + "\n" + "Number of Decimals: " + result.numOfDecs + "\n" + "Number of Strings: "+ result.numOfStrings)
+}
 //
 // Your functions here...
 //
+
+//Ex 5
+
+const countIt = (array) => {
+    let CountInt = 0;
+    let CountDec = 0;
+    let CountStr = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof (array[i]) == "number" && Number.isInteger(array[i]))  {            //Integers
+            CountInt++;
+        }
+        if (typeof (array[i]) == "number" && !Number.isInteger(array[i])) {            //Decimals
+            CountDec++;
+        }
+        if (typeof (array[i]) == "string")  {      //Strings
+            CountStr++;
+        }
+   }
+   //const [age, name] = getDetails()
+   return {
+        numOfIntegers: CountInt,
+        numOfDecs:  CountDec,
+        numOfStrings: CountStr
+   }
+}
 
 //Ex 4
 
@@ -82,7 +111,7 @@ const countNumbers = (array) => {
 
 
 const main = async () => {
-    ex4();
+    ex5();
 }
 
 main();

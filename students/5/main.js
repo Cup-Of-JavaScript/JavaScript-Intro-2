@@ -19,6 +19,11 @@ const ex3 = () => {
   console.log(interleave(array1, array2));
 };
 
+const exx3 = () => {
+    const str = ['this', 'is', 'a', 'test', 'happy'];
+    console.log(shortestString(str));
+}
+
 //
 // Your functions here...
 
@@ -61,8 +66,22 @@ const interleave = (array1, array2) => {
   return newArray;
 };
 
+//exercise x3
+const shortestString = (str) => {
+    let shortestString; 
+     let lgth =str[0].length
+    
+    for(let i=0; i<str.length; i++){
+       if( str[i].length< lgth ) {
+           lgth = str[i].length;
+           shortestString = str[i]
+       }
+    }
+    return shortestString
+}
+
 const main = async () => {
-  ex3();
+  exx3();
 };
 
 main();
