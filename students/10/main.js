@@ -14,23 +14,53 @@ const ex2 = () => {
 }
 
 const ex3 = () => {
+    const array = ['this', 'is', 'a', 'test', 'happy'];
+    console.log(shortestString(array));
+}
 
+const ex4 = () => {
+    let array = ["this", "is", "a", "test"];
+    console.log(countLetters(array)); 
 }
 
 //
 // Your functions here...
 //
 
+//ex4
+const countLetters = (array)=> {
+   let counter = 0;
+   for (let i = 0; i < array.length; i++) {
+       counter += array[i].length
+       }
+   
+   return counter;
+}
+
+//ex3
+const shortestString = (array) => {
+    let shortest = array[0]
+    for(let i = 0; i < array.length; i++) {
+        if(array[i].length < shortest.length) {
+            shortest = array[i]
+        }
+    }
+    return shortest
+}
+
 //ex2 
 const minNumber = (array) => {
     let retval = array[0];
     for (let i = 1; i < array.length; i++) {
         if ( array[i] < retval) {
-            retval = array[i];
+            if (typeof(i) == "number" && i < retval) {
+                retval = i;
         }
     }
     return retval;
+ }
 }
+
 
 //ex1
 const countNumbers = (array) =>{
@@ -44,7 +74,7 @@ const countNumbers = (array) =>{
 }
 
 const main = async () => {
-    ex2();
+    ex4();
 }
 
-main();
+main(); 
