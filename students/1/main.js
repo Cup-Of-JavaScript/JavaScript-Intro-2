@@ -34,7 +34,7 @@ const ex5 = () => {
 
 let countIt = (array) => {
     let results = 0 
-    for (let i=0; i <; i++){
+    for (let i=0; i < 5; i++){
 
     }
     return results
