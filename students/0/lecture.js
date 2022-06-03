@@ -9,12 +9,41 @@ const update = (a, b, c, person) => {
     person.firstName = "Joey"
 }
 
+const test = () => {
+
+    let person1 = { name: "Alice", age: 14 }
+    let person2 = { name: "Bob", age: 15 }
+    let dog = { name: "Jones", age: 15 }
+
+    let personList = [];
+    personList.push(person1);
+    personList.push(person2);
+    personList.push("Hello World")
+    console.table(personList)
+
+    console.table(personList)
+}
+
+
 const main = () => {
+
+    test();
+
+
+
+
+
+
+
+
+
+
+
     let a = 11; // Primitive type
     let b = "hello"; // Primitive type
     let c = [1,2,3]; // Reference array
 
-    console.log(a,b,c);
+    //console.log(a,b,c);
 
     let person = {  // JavaScript Object
         firstName: "Joe", 
