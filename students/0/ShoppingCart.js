@@ -31,10 +31,6 @@ const calculateTotal = (shoppingCartItems, shoppingCartQuantities) => {
     return formatCurrency(retval);
 }
 
-//
-// calculateTotal function goes here
-//
-
 const formatCurrency = (dollarAmount) => {
    let formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
    return formatter.format(dollarAmount)   

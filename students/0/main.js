@@ -46,16 +46,63 @@ const createPerson = (name, age) => {
 }
 
 const ex3 = () => {
-
+    let item1 = { quantity: 1, cost: 1.00 }
+    let item2 = { quantity: 2, cost: 2.00 }
+    let item3 = { quantity: 3, cost: 3.00 }
     
+    let items = [];
+    items.push(item1);
+    items.push(item2);
+    items.push(item3);
+
+    console.log(calculateTotal2(items))
 }
+
+const calculateTotal2 = (items) => {
+    let retval = 0;
+    for (let i of items) {
+        retval += (i.quantity * i.cost)
+    }
+    return retval;
+}
+
+const formatCurrency = (dollarAmount) => {
+    let formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+    return formatter.format(dollarAmount)   
+}
+
+const calcCellBillForPerson = (usageData, person) => {
+    let retval = person;
+    for (let ud of usageData) {
+        if (ud.userId == person.userId) {
+            person.minutes = ud.minutes;
+            person.perMinuteCharge = .10
+            person.charges = formatCurrency(ud.minutes * person.perMinuteCharge) 
+        }
+    }
+    return retval; 
+}
+
+const ex4 = () => {    
+    let usageData = [
+        { userId: 1111, minutes: 10.0 },
+        { userId: 2222, minutes: 20.0 },
+        { userId: 3333, minutes: 30.0 }
+    ]
+
+    let person = { userId: 3333, fullName: "Charlie" }
+    let result = calcCellBillForPerson(usageData, person)
+    console.log(result)
+}
+
+
 
 //
 // Your functions here...
 //
 
 const main = async () => {
-    ex2();
+    ex4();
 
 }
 

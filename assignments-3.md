@@ -90,3 +90,46 @@ Output
 ```
 
 ## Ex. 9
+Given the following JavaScript objects:
+
+```
+let item1 = { quantity: 1, cost: 1.00 }
+let item2 = { quantity: 2, cost: 2.00 }
+let item3 = { quantity: 3, cost: 3.00 }
+```
+
+Create array of items using the `push` method and pass this array into a function called: `calculateTotal`.  This function calculates the total of all the items.
+
+Output
+```
+14
+```
+
+## Ex 10.
+Given the following code:
+
+```
+let usageData = [
+    { userId: 1111, minutes: 10.0 },
+    { userId: 2222, minutes: 20.0 },
+    { userId: 3333, minutes: 30.0 }
+]
+
+let person = { userId: 3333, fullName: "Charlie" }
+let result = calcCellBillForPerson(usageData, person)
+console.log(result)
+```
+
+Create a function called `calcCellBillForPerson` that accepts usage data for many people and accepts one person JavaScript object.  This function returns the following JavaScript object:
+
+```
+{
+  userId: 3333,
+  fullName: 'Charlie',
+  minutes: 30,
+  perMinuteCharge: 0.1,
+  charges: '$3.00'
+}
+```
+
+This function determines the charges for a person based on their minutes at $.10 a minute.
