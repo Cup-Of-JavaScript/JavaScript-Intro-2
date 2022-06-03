@@ -84,7 +84,7 @@ Create a function called `createPerson` that creates the following JavaScript ob
 
 Create a function called `countOver20` that returns the number of people that are over 20 years old.
 
-Output
+Output:
 ```
 2
 ```
@@ -100,7 +100,7 @@ let item3 = { quantity: 3, cost: 3.00 }
 
 Create array of items using the `push` method and pass this array into a function called: `calculateTotal`.  This function calculates the total of all the items.
 
-Output
+Output:
 ```
 14
 ```
@@ -122,6 +122,7 @@ console.log(result)
 
 Create a function called `calcCellBillForPerson` that accepts usage data for many people and accepts one person JavaScript object.  This function returns the following JavaScript object:
 
+Output:
 ```
 {
   userId: 3333,
