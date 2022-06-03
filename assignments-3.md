@@ -5,9 +5,9 @@ Create an arrow function named: `countItems` that counts the number of integer n
 
 ```
 {
-    numIntegers: 0,
-    numDecimals: 0, 
-    numStrings: 0
+    numIntegers: <number>,
+    numDecimals: <number>, 
+    numStrings: <number>
 }
 ```
 
