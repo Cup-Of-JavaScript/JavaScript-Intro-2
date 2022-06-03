@@ -20,14 +20,21 @@ const ex3 = () => {
 };
 
 const exx3 = () => {
-    const str = ['this', 'is', 'a', 'test', 'happy'];
-    console.log(shortestString(str));
-}
+  const str = ["this", "is", "a", "test", "happy"];
+  console.log(shortestString(str));
+};
 
 const ex4 = () => {
-    const array = ["this", "is", "a", "test"];
-    console.log(countLetters(array));
-}
+  const array = ["this", "is", "a", "test"];
+  console.log(countLetters(array));
+};
+
+const ex5 = () => {
+  let array = ["this", "is", 1, 3, 2.1, "a", "test"];
+  console.log("Number of Integers:" + intergerNumbers(array));
+  console.log("Number of Decimal Numbers:" + decimalNumbers(array));
+  console.log("Number of Strings:" + numberOfStrings(array));
+};
 
 //
 // Your functions here...
@@ -73,29 +80,51 @@ const interleave = (array1, array2) => {
 
 //exercise x3
 const shortestString = (str) => {
-    let shortestString; 
-     let lgth =str[0].length
-    
-    for(let i=0; i<str.length; i++){
-       if( str[i].length< lgth ) {
-           lgth = str[i].length;
-           shortestString = str[i]
-       }
+  let shortestString;
+  let lgth = str[0].length;
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i].length < lgth) {
+      lgth = str[i].length;
+      shortestString = str[i];
     }
-    return shortestString
-}
- 
+  }
+  return shortestString;
+};
+
 //exercise 4
 const countLetters = (array) => {
-    let newArray = array.join('');
-    return newArray.length
-}   
-
-
+  let newArray = array.join("");
+  return newArray.length;
+};
+//exercise 5
+const intergerNumbers = (array) => {
+  let intergers = 0;
+  for (let i of array)
+    if (typeof i === "number" && Number.isInteger(i)) {
+      intergers++;
+    }
+  return intergers;
+};
+const decimalNumbers = (array) => {
+  let decimals = 0;
+  for (let i of array)
+    if (typeof i === "number" && !Number.isInteger(i)) {
+      decimals++;
+    }
+  return decimals;
+};
+const numberOfStrings = (array) => {
+  let strings = 0;
+  for (let i of array)
+    if (typeof i === "string") {
+      strings++;
+    }
+  return strings;
+};
 
 const main = async () => {
-  ex4();
-
+  ex5();
 };
 
 main();
