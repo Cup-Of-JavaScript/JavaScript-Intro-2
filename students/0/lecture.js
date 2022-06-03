@@ -1,32 +1,37 @@
-const update = (a, b) => {
+// Pass by value (copy)/pass by reference
+// Objects
+
+const update = (a, b, c, person) => {
     a = 55;
     b = "world";
+    c.push(4);
+    c.push(5);
+    person.firstName = "Joey"
 }
 
 const main = () => {
-    let a = 11;
-    let b = "hello";
-    update(a, b);
-    console.log(a, b);
+    let a = 11; // Primitive type
+    let b = "hello"; // Primitive type
+    let c = [1,2,3]; // Reference array
 
+    console.log(a,b,c);
 
-
-
-
-
-    // let person = { // JavaScript Object 
-    //     firstName: "Joe", 
-    //     lastName: "Smith"
-    // }
-
+    let person = {  // JavaScript Object
+        firstName: "Joe", 
+        lastName: "Smith" 
+    } // Reference type
+    
+    update(a, b, c, person);
+    
     // A JavaScript object that is serialized becomes JSON...
     
-    //console.log(a, b, person)
-
-    //let jsonPerson = JSON.stringify(person)
+    let jsonPerson = JSON.stringify(person)
     //console.log(jsonPerson)
-    // let jsObject = JSON.parse(jsonPerson)
-    // console.log(jsObject)
+    //console.log(person)
+
+
+    //let jsObject = JSON.parse(jsonPerson)
+    //console.log(jsObject)
 
     /**
      * JSON 39 chars
@@ -41,5 +46,7 @@ const main = () => {
     </person>
     */
 }
+
+
 
 main();
