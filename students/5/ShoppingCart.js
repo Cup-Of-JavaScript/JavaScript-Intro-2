@@ -10,7 +10,8 @@ const formatCurrency = (dollarAmount) => {
 const main = async () => {
   const shoppingCartItems = [1.0, 2.0, 3.0];
   const shoppingCartQuantities = [2, 3, 1];
-  console.log(calculateTotal(shoppingCartItems, shoppingCartQuantities));
+  console.log(formatCurrency(calculateTotal(shoppingCartItems, shoppingCartQuantities)));
+   
 };
 
 const calculateTotal = (
@@ -27,6 +28,7 @@ const calculateTotal = (
   }
 
   return sum;
+  
 };
 
 main();
