@@ -105,7 +105,7 @@ Output
 14
 ```
 
-## Ex 10.
+## Ex. 10
 Given the following code:
 
 ```
