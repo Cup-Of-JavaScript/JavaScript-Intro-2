@@ -73,6 +73,7 @@ const formatCurrency = (dollarAmount) => {
 
 const calcCellBillForPerson = (usageData, person) => {
     let retval = person;
+    // let ud = usageData.find(i=>i.userId == person.userId) // functional approach
     for (let ud of usageData) {
         if (ud.userId == person.userId) {
             person.minutes = ud.minutes;
