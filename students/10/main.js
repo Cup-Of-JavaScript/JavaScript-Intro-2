@@ -36,24 +36,24 @@ const ex6 = () => {
 //
 
 const countItems = (array) => {
-    let countDec = 0;
-    let countStr = 0;
-    let countNum = 0;
+    let countDecimalNumbers = 0;
+    let countStrings = 0;
+    let countIntegerNumbers = 0;
     for(let i = 0; i < array.length; i++) {
         if(typeof (array[i]) == "number" && Number.isInteger(array[i])){
-            countNum++;
+            countIntegerNumbers++;
         }
         if(typeof (array[i]) == "number" && !Number.isInteger(array[i])){
-            countDec++;
+            countDecimalNumbers++;
         }
         if(typeof(array[i])== "string"){
-            countStr++;
+            countStrings++;
         }
     }
     return {
-        numIntegers: countNum,
-        numDecimals: countDec,
-        numStrings: countStr
+        numIntegers: countIntegerNumbers,
+        numDecimals: countDecimalNumbers,
+        numStrings: countStrings
     }
     
 }
