@@ -4,12 +4,18 @@
 // 
 
 const ex1 = () => {
-   let list = [1,2,3]
-   for (let n of list) {
-       if (n=2) {
-           console.log('here')
-       }
-   }
+    let person1 = { name: "Alice", age: 22 }
+    let person2 = { name: "Bob", age: 21 }
+    let person3 = { name: "Charlie", age: 23 }
+
+    let personArray = [];
+    personArray.push(person1)
+    personArray.push(person2)
+    personArray.push(person3)
+
+    personArray.sort((a,b) => a.age - b.age )
+
+    console.table(personArray)
 }
 
 const ex2 = () => {
