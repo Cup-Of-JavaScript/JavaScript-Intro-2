@@ -163,7 +163,7 @@ const countStrings = (array) => {
 
 
 const main = async () => {
-  ex();
+  ex6();
 };
 
 main();
