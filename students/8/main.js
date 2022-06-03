@@ -26,43 +26,74 @@ const ex4 = () => {
 const ex5 = () => {
     let array = ["this", "is", 1, 3, 2.1, "a", "test"];
     let result = countIt(array);
-    console.log("Number of Integers: " + result.numOfIntegers + "\n" + "Number of Decimals: " + result.numOfDecs + "\n" + "Number of Strings: "+ result.numOfStrings)
+    console.log("Number of Integers: " + result.numOfIntegers + "\n" + "Number of Decimals: " + result.numOfDecs + "\n" + "Number of Strings: " + result.numOfStrings)
+}
+
+const ex6 = () => {
+    let array = ["this", "is", 1, 3, 2.1, "a", "test"];
+    let result = countIt(array);
+    console.log("Number of Integers: " + result.numOfIntegers + "\n" + "Number of Decimals: " + result.numOfDecs + "\n" + "Number of Strings: " + result.numOfStrings)
 }
 //
 // Your functions here...
 //
 
-//Ex 5
+//Ex 6
 
-const countIt = (array) => {
+const countIt = array => {
     let CountInt = 0;
     let CountDec = 0;
     let CountStr = 0;
     for (let i = 0; i < array.length; i++) {
-        if (typeof (array[i]) == "number" && Number.isInteger(array[i]))  {            //Integers
+        if (typeof (array[i]) == "number" && Number.isInteger(array[i])) {            //Integers
             CountInt++;
         }
         if (typeof (array[i]) == "number" && !Number.isInteger(array[i])) {            //Decimals
             CountDec++;
         }
-        if (typeof (array[i]) == "string")  {      //Strings
+        if (typeof (array[i]) == "string") {      //Strings
             CountStr++;
         }
-   }
-   //const [age, name] = getDetails()
-   return {
+    }
+
+    return {
         numOfIntegers: CountInt,
-        numOfDecs:  CountDec,
+        numOfDecs: CountDec,
         numOfStrings: CountStr
-   }
+    }
 }
+
+//Ex 5
+
+// const countIt = array => {
+//     let CountInt = 0;
+//     let CountDec = 0;
+//     let CountStr = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         if (typeof (array[i]) == "number" && Number.isInteger(array[i])) {            //Integers
+//             CountInt++;
+//         }
+//         if (typeof (array[i]) == "number" && !Number.isInteger(array[i])) {            //Decimals
+//             CountDec++;
+//         }
+//         if (typeof (array[i]) == "string") {      //Strings
+//             CountStr++;
+//         }
+//     }
+
+//     return {
+//         numOfIntegers: CountInt,
+//         numOfDecs: CountDec,
+//         numOfStrings: CountStr
+//     }
+// }
 
 //Ex 4
 
-const countLetters = (array) => {
+const countLetters = array => {
     let counter = 0;
     for (let i = 0; i < array.length; i++) {
-         counter += array[i].length   
+        counter += array[i].length
     }
 
     return counter;
@@ -73,12 +104,12 @@ const countLetters = (array) => {
 
 const shortestString = (array) => {
     let lgth = array[0].length;
-    let shortest;    
+    let shortest;
     for (let i = 0; i < array.length; i++) {
-      if (array[i].length < lgth) {
-        let lgth = array[i].length;
-        shortest = array[i];
-      }
+        if (array[i].length < lgth) {
+            let lgth = array[i].length;
+            shortest = array[i];
+        }
     }
     return shortest;
 }
@@ -88,7 +119,7 @@ const shortestString = (array) => {
 
 const minNumber = (array) => {
     let lowest = array[0];
-    for (let i=0; i < array.length; i++)  {
+    for (let i = 0; i < array.length; i++) {
         if (typeof (array[i]) == "number" && array[i] < lowest) {
             lowest = array[i]
         }
@@ -101,17 +132,17 @@ const minNumber = (array) => {
 
 const countNumbers = (array) => {
     let retval = 0;
-    for (let i=0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         if (typeof (array[i]) == 'number' && !Number.isInteger(array[i])) {
-                retval++;
-            }
+            retval++;
         }
+    }
     return retval;
 }
 
 
 const main = async () => {
-    ex5();
+    ex6();
 }
 
 main();
