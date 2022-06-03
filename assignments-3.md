@@ -35,7 +35,7 @@ Number of Strings: 4
 ```
 
 ## Ex. 7
-Consider the following person objects:
+Consider the following person JavaScript objects:
 ```
 let person1 = { name: "Alice", age: 22 }
 let person2 = { name: "Bob", age: 21 }
@@ -55,5 +55,38 @@ Output:
 └─────────┴───────────┴─────┘
 ```
 
-## Ex. 8
+When you are finished submit a PR.
 
+## Ex. 8
+Given the following code:
+
+```
+let p1 = createPerson("Alice", 11)
+let p2 = createPerson("Bob", 22)
+let p3 = createPerson("Charlie", 33)
+
+let personArray = [];
+personArray.push(p1)
+personArray.push(p2)
+personArray.push(p3)
+
+console.log(countOver20(personArray))
+```
+
+Create a function called `createPerson` that creates the following JavaScript object:
+
+```
+{
+  fullName: <string>,
+  age: <number>
+}
+```
+
+Create a function called `countOver20` that returns the number of people that are over 20 years old.
+
+Output
+```
+2
+```
+
+## Ex. 9
