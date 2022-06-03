@@ -4,7 +4,12 @@
 // 
 
 const ex1 = () => {
-   
+   let list = [1,2,3]
+   for (let n of list) {
+       if (n=2) {
+           console.log('here')
+       }
+   }
 }
 
 const ex2 = () => {
@@ -13,6 +18,7 @@ const ex2 = () => {
 
 const ex3 = () => {
 
+    
 }
 
 //
@@ -21,6 +27,7 @@ const ex3 = () => {
 
 const main = async () => {
     ex1();
+
 }
 
 main();
