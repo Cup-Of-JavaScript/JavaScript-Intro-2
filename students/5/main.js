@@ -160,8 +160,10 @@ const countStrings = (array) => {
   return numStrings;
 };
 
+
+
 const main = async () => {
-  ex6();
+  ex();
 };
 
 main();
