@@ -11,7 +11,7 @@ const ex1 = () => {
 const countNumbers = (array) => {
     let count = 0;
     array.forEach( i => {
-        if(typeof(i)== 'number' && !Number.isInteger(i)) {
+        if(typeof(i)== 'numIntergers' && !Number.isInteger(i)) {
                 count++
         }
     })
@@ -28,7 +28,7 @@ const minNumber = (array) => {
     let lowestVal = array[0];
 
     for(let i of array){
-        if(typeof(i) == 'number' || typeof(i) == 'true' || typeof(i) == 'false' && i < lowestVal  ){
+        if(typeof(i) == 'numIntergers' || typeof(i) == 'true' || typeof(i) == 'false' && i < lowestVal  ){
             lowestVal = i;   
         }
     } return lowestVal;
@@ -66,14 +66,51 @@ const countLetters = (array) => {
     return numLetters;
 }
 
-const ex5 = () => {
+const ex6 = () => {
+    let array = ["this", "is", 1, 3, 2.1, "a", "test"];
+    console.log("Number of Integers: " + countNumberss(array))
+    console.log("Number of Decimal Numbers: " + countDecimals(array))
+    console.log("Number of Strings: " + countStrings(array))
+}
 
+
+
+const countNumberss = (array) => {
+       let numIntergers = 0;
+       for(let i of array) {
+           if(typeof i === 'number' && Number.isInteger(i)) {
+               numIntergers++;
+           }
+       }
+       return numIntergers
+}
+
+const countDecimals = (array) => {
+    let decimal = 0;
+    for(let i of array) {
+        if(typeof i === 'number' && !Number.isInteger(i)) {
+            decimal++;
+            
+        }
+    }
+    return decimal
+}
+
+
+const countStrings = (array) => {
+    let string = 0;
+    for(let i of array) {
+        if(typeof i === 'string') {
+            string++;
+            
+        }
+    }
+    return string
 }
 
 
 const main = async () => {
-    ex4();
+    ex6();
 }
 
 main();
-
