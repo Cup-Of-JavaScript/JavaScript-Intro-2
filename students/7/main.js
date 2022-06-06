@@ -68,12 +68,23 @@ const countLetters = (array) => {
 
 const ex6 = () => {
     let array = ["this", "is", 1, 3, 2.1, "a", "test"];
-    console.log("Number of Integers: " + countNumberss(array))
-    console.log("Number of Decimal Numbers: " + countDecimals(array))
-    console.log("Number of Strings: " + countStrings(array))
+    let result = countItems(array);
+    console.log("Number of Integers: " + result.numIntegers)
+    console.log("Number of Decimal Numbers: " + result.numDecimals)
+    console.log("Number of Strings: " + result.numStrings)
 }
 
-
+const countItems = (array) => {
+    let retval = {
+        numIntegers: 0,
+        numDecimals: 0,
+        numStrings: 0
+    }
+    retval.numIntegers = countNumberss(array);
+    retval.numDecimals = countDecimals(array);
+    retval.numStrings = countStrings(array);
+    return retval;
+}
 
 const countNumberss = (array) => {
        let numIntergers = 0;
@@ -96,7 +107,6 @@ const countDecimals = (array) => {
     return decimal
 }
 
-
 const countStrings = (array) => {
     let string = 0;
     for(let i of array) {
@@ -107,6 +117,7 @@ const countStrings = (array) => {
     }
     return string
 }
+
 
 
 const main = async () => {
