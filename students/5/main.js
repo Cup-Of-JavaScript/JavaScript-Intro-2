@@ -235,10 +235,10 @@ let person1 = { name: "Alice", age: 22 };
 const calculateTotal = (personArray) => {
     let price = personArray.map( personArray => personArray.quantity * personArray.cost);
     let calculatetotal = price.reduce( (a,b) => (a+b) );
-  console.log(calculatetotal);
-  //console.log(price);
-   
-  };
+    return calculatetotal;
+    //console.log(calculatetotal);
+    //console.log(price);
+};
   
 
 const main = async () => {
