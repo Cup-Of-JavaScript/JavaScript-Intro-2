@@ -119,9 +119,23 @@ const countStrings = (array) => {
 }
 
 
+const ex7 = () => {
+    let person1 = { name: "Alice", age: 22 }
+    let person2 = { name: "Bob", age: 21 }
+    let person3 = { name: "Charlie", age: 23 }
+
+    let group = []
+    group.push(person2)
+    group.push(person1)
+    group.push(person3)
+
+    console.table(group)
+    
+}
+
 
 const main = async () => {
-    ex6();
+    ex7();
 }
 
 main();
