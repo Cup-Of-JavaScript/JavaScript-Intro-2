@@ -23,34 +23,62 @@ const ex4 = () => {
     console.log(countLetters(array));
 }
 
-const ex5 = () => {
+const ex6 = () => {
     let array = ["this", "is", 1, 3, 2.1, "a", "test"];
-    countIt(array);
+    let result = countItems(array);
+    console.log("Number of Integers: " + result.numIntegers)
+    console.log("Number of Decimal Numbers: " + result.numDecimals)
+    console.log("Number of Strings: " + result.numStrings)
 }
 
 //
 // Your functions here...
 //
-
-let countIt = (array) => {
-    let results = 0 
-    for (let i=0; i < 5; i++){
-
+const countItems = (array) => {
+    let retval = {
+        numIntegers: 0,
+        numDecimals: 0,
+        numStrings: 0
     }
-    return results
+    let r = countStrings(array)
+    retval.numIntegers = countIntegers(array)
+    retval.numDecimals = countDecimals(array)
+    retval.numStrings = countStrings(array)
+    return retval;
+}
+const countIntegers = (array) => {
+    let number = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof (array[i]) === "number" && Number.isInteger(array[i])) {
+            number++
+        }
+    }
+    return number;
+}
+const countDecimals = (array) => {
+    let decimal = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof (array[i]) === "number"  && !Number.isInteger(array[i])) {
+            decimal++
+        }
+    }
+    return decimal;
 }
 
-let countLetters = (array) => {
-    let finval = 0
-    for(let i = 0; i < array.length; i++){
-        finval += array[i].length          
+const countStrings = (array) => {
+    let string = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof (array[i]) === "string") {
+            string++
+        }
     }
-    return finval
+    return string;
 }
+
 
 let shortestString = (array) => {
-    let value = array.sort((a,b) => a.length + b.length)
-        return value[array.length - 3]
+    let value = array.sort((a, b) => a.length + b.length)
+    return value[array.length - 3]
 }
 
 let minNumber = (array) => {
@@ -74,7 +102,7 @@ let countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex4();
+    ex6();
 }
 
 main();
