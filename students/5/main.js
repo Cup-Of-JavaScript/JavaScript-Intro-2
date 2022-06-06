@@ -38,9 +38,10 @@ const ex5 = () => {
 
 const ex6 = () => {
   let array = ["this", "is", 1, 3, 2.1, "a", "test"];
-  console.log("Number of Integers: " + countIntegerNumbers(array));
-  console.log("Number of Decimal Numbers: " + countDecimalNumbers(array));
-  console.log("Number of Strings: " + countStrings(array));
+  let result = countItems(array);
+  console.log("Number of Integers: " + result.numIntegers)
+  console.log("Number of Decimal Numbers: " + result.numDecimals)
+  console.log("Number of Strings: " + result.numStrings)
 };
 
 //
@@ -131,6 +132,17 @@ const numberOfStrings = (array) => {
 };
 
 //exercise 6
+const countItems = (array) =>{
+    let retval ={
+    numIntegers: 0,
+    numDecimals: 0,
+    numStrings: 0,
+    }
+    retval.numIntegers = countIntegerNumbers(array);
+    retval.numDecimals = countDecimalNumbers(array);
+    retval.numStrings = countStrings(array);
+    return retval; 
+}
 
 const countIntegerNumbers = (array) => {
   let numIntegers = 0;
@@ -159,7 +171,8 @@ const countStrings = (array) => {
   });
   return numStrings;
 };
-
+ 
+// exercise 7
 
 
 const main = async () => {
