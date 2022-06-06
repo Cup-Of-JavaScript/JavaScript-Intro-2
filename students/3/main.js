@@ -15,7 +15,7 @@ const ex2 = () => {
 }
 
 const ex3 = () => {
-   let array = ['this', 'is', 'a', 'test', 'happy'];
+    let array = ['this', 'is', 'a', 'test', 'happy'];
     console.log(shortestString(array));
 }
 
@@ -24,22 +24,32 @@ const ex4 = () => {
     console.log(countLetters(array));
 }
 
+const ex6 = () => {
+    let array = ["this", "is", 1, 3, 2.1, "a", "test"];
+    let result = countItems(array);
+    console.log("Number of Integers: " + result.numIntegers)
+    console.log("Number of Decimal Numbers: " + result.numDecimals)
+    console.log("Number of Strings: " + result.numStrings)
+}
 //
 // Your functions here...
 //
 
+// EX 6
+
+
 
 // EX 4
 const countLetters = (array) => {
-    let newArray = array.join ('');
+    let newArray = array.join('');
     return newArray.length;
 }
 
 
 // EX 3
 const shortestString = (array) => {
-     let retval = array.reduce((a, b) => a.length <= b.length ? a : b) 
-     return retval
+    let retval = array.reduce((a, b) => a.length <= b.length ? a : b)
+    return retval
 }
 
 
