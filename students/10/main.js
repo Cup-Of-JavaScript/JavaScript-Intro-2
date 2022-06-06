@@ -31,11 +31,32 @@ const ex6 = () => {
     console.log("Number of Strings: " + result.numStrings)
 }
 
+const ex7 = () => {
+    const groupArray = [];
+    console.table(objList(groupArray));
+}
+
 //
 // Your functions here...
 //
 
 //ex7
+const objList = (groupArray) => {
+    let person1 = { name: "Alice", age: 22 }
+    let person2 = { name: "Bob", age: 21 }
+    let person3 = { name: "Charlie", age: 23 }
+
+    groupArray.push(person1);
+    groupArray.push(person2);
+    groupArray.push(person3);
+
+    groupArray.sort((a, b) => (a.age - b.age))
+    return groupArray;
+}
+        
+       
+
+        
 
 
 
@@ -84,15 +105,6 @@ const countStrings = array => {
     return numStr;
 }
 
-        
-        
-    
-        
-    
-    
-
-
-
 //ex4
 const countLetters = (array)=> {
     let counter = 0;
@@ -137,7 +149,7 @@ const countNumbers = (array) =>{
 }
 
 const main = async () => {
-    ex6();
+    ex7();
 }
 
 main();
