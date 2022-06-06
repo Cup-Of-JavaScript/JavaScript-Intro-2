@@ -48,6 +48,21 @@ const ex7 = () => {
     console.table(personList);
   };
 
+  const ex8 = () => {
+    let p1 = createPerson("Alice", 11);
+    let p2 = createPerson("Bob", 22);
+    let p3 = createPerson("Charlie", 33);
+
+    let personArray = [];
+    personArray.push(p1);
+    personArray.push(p2);
+    personArray.push(p3);
+     
+
+    console.log(countOver20(personArray));
+  
+};
+
 //
 // Your functions here...
 
@@ -185,8 +200,26 @@ let person1 = { name: "Alice", age: 22 };
    personList.push(person1);
    personList.push(person3);
 
+   //exercise 8
+   const createPerson = (name, age) =>{
+       let object ={
+           fullName: name,
+           age: age,
+       }
+       return object;
+   };
+   const countOver20 = (personArray) => {
+       let retval =0;
+       for(let i of personArray) {
+           if(typeof i.age === 'number' && i.age > 20 ){
+               retval++
+           }
+       };
+       return retval
+   };
+
 const main = async () => {
-  ex7();
+  ex8();
 };
 
 main();
