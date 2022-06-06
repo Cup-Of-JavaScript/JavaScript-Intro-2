@@ -130,6 +130,7 @@ const ex7 = () => {
     group.push(person3)
 
     console.table(group)
+    
 }
 
 
