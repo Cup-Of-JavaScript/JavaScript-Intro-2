@@ -35,17 +35,45 @@ const ex6 = () => {
 // Your functions here...
 //
 const countItems = (array) => {
-
-        let retval = {
-            numIntergers: 0,
-            numDecimals: 0,
-            numStrings: 0
-        }
-        retval.numIntergers = countNumbers(array)
-        retval.numDecimals = countDecimals(array)
-        retval.numStrings = countStrings(array)
-        return retval;
+    let retval = {
+        numIntegers: 0,
+        numDecimals: 0,
+        numStrings: 0
     }
+    let r = countStrings(array)
+    retval.numIntegers = countIntegers(array)
+    retval.numDecimals = countDecimals(array)
+    retval.numStrings = countStrings(array)
+    return retval;
+}
+const countIntegers = (array) => {
+    let number = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof (array[i]) === "number" && Number.isInteger(array[i])) {
+            number++
+        }
+    }
+    return number;
+}
+const countDecimals = (array) => {
+    let decimal = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof (array[i]) === "number"  && !Number.isInteger(array[i])) {
+            decimal++
+        }
+    }
+    return decimal;
+}
+
+const countStrings = (array) => {
+    let string = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof (array[i]) === "string") {
+            string++
+        }
+    }
+    return string;
+}
 
 
 let shortestString = (array) => {
