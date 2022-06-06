@@ -39,13 +39,48 @@ const ex6 = () => {
 }
 
 const ex7 = () => {
-    const peopleArray =[];
-    console.table(makepeople(peopleArray));
+    const peopleArray = [];
+    console.log(makepeople(peopleArray));
+}
+
+const ex8 = () => {
+    let personArray = [];
+    console.log(countOver20(personArray))
 }
 
 //
 // Your functions here...
 //
+
+
+//Ex 8
+
+const createPerson = (name, age) => {
+    return {
+        fullName: name,
+        age: age,
+    }
+}
+
+const countOver20 = (personArray) => {
+    let p1 = createPerson("Alice", 11)
+    let p2 = createPerson("Bob", 22)
+    let p3 = createPerson("Charlie", 33)
+
+    personArray.push(p1)
+    personArray.push(p2)
+    personArray.push(p3)
+
+
+    let counter = 0;
+    for (let i of personArray) {
+        if (i.age > 20 && typeof i.age == 'number') {
+            counter++;
+        }
+    }
+    return counter;
+}
+
 
 //Ex 7
 
@@ -53,7 +88,7 @@ const makepeople = (peopleArray) => {
     let person1 = { name: "Alice", age: 22 }
     let person2 = { name: "Bob", age: 21 }
     let person3 = { name: "Charlie", age: 23 }
- 
+
     peopleArray.push(person1);
     peopleArray.push(person2);
     peopleArray.push(person3);
@@ -61,34 +96,19 @@ const makepeople = (peopleArray) => {
     peopleArray.sort((a, b) => (a.age > b.age) ? 1 : -1)
     return peopleArray;
 
-}
-    // const getData = (tableName)  => {
-    //     let retval = "No Data";
-    //     if (tableName == "person") {
-    //       retval = [
-    //         { firstName: "Alice", lastName: "Jones", age: 10 },
-    //         { firstName: "Bob", lastName: "Smith", age: 7 },
-    //         { firstName: "Charlie", lastName: "Thumb", age: 5 },
-    //       ];
-    //     }
 
-// const main = () => {     //For making the table and sorting alpha
-//     let table = "person";
-//     let personList = getData(table);
-//     personList.sort((a,b) => (a-b));
-//     displayResults(personList);
-//   }
+}
 
 //Ex 6
 
 
 const countItems = array => {
     let retval = {
-        numStrings: 0, 
+        numStrings: 0,
         numIntegers: 0,
         numDecimals: 0
     }
-    retval.numStrings =  countStrings(array);
+    retval.numStrings = countStrings(array);
     retval.numIntegers = countIntegers(array);
     retval.numDecimals = countDecimals(array);
     return retval;
@@ -98,7 +118,7 @@ const countIntegers = array => {
     let numIntegers = 0;
     array.forEach((element) => {
         if (typeof element === "number" && Number.isInteger(element)) {
-          numIntegers++;
+            numIntegers++;
         }
     });
     return numIntegers;
@@ -108,7 +128,7 @@ const countDecimals = array => {
     let numDecimals = 0;
     array.forEach((element) => {
         if (typeof element === "number" && !Number.isInteger(element)) {            //Decimals
-        numDecimals++;
+            numDecimals++;
         }
     });
     return numDecimals;
@@ -118,9 +138,9 @@ const countStrings = array => {
     let numStrings = 0;
     array.forEach((element) => {
         if (typeof (element) == "string") {      //Strings
-        numStrings++;
+            numStrings++;
         }
-    });  
+    });
     return numStrings;
 }
 
@@ -204,7 +224,7 @@ const countNumbers = (array) => {
 
 
 const main = async () => {
-    ex7();
+    ex8();
 }
 
 main();
