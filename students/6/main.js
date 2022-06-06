@@ -55,6 +55,7 @@ const IntNumbers = (array) => {         //part of ex6
         }
     }
     return countInt;
+
 };
 
 const DecNumbers = (array) => {         //part of ex6
