@@ -46,9 +46,44 @@ const ex7 = () => {
     // displayPeople(everyone);
 }
 
+const ex8 = () => {
+let p1 = createPerson("Alice", 11)
+let p2 = createPerson("Bob", 22)
+let p3 = createPerson("Charlie", 33)
+
+let personArray = [];
+personArray.push(p1)
+personArray.push(p2)
+personArray.push(p3)
+
+console.log(countOver20(personArray))
+}
+
 //
 // Your functions here...
 //
+
+const createPerson = () => {
+  let roster = [
+        {
+            fullName: "Alice",
+            age: 22
+          },
+          {
+            fullName: "Bob",
+            age: 21
+          },
+          {
+            fullName: "Charlie",
+            age: 23
+          }
+    ]
+    
+}
+
+const countOver20 = (personArray) => {
+    
+}
 
 const displayPeople = (everyone) => {
     everyone.sort((a, b) => a.age - b.age);
@@ -123,7 +158,7 @@ let countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex7();
+    ex8();
 }
 
 main();
