@@ -60,8 +60,21 @@ const ex7 = () => {
      
 
     console.log(countOver20(personArray));
-  
-};
+  };
+
+  const ex9 = () => {
+    let item1 = { quantity: 1, cost: 1.00 }
+    let item2 = { quantity: 2, cost: 2.00 }
+    let item3 = { quantity: 3, cost: 3.00 }
+
+    let personArray = [];
+    personArray.push(item1);
+    personArray.push(item2);
+    personArray.push(item3);
+   // console.log(personArray)
+    console.log(calculateTotal(personArray));
+    
+   }
 
 //
 // Your functions here...
@@ -218,8 +231,18 @@ let person1 = { name: "Alice", age: 22 };
        return retval
    };
 
+//exercise 9
+const calculateTotal = (personArray) => {
+    let price = personArray.map( personArray => personArray.quantity * personArray.cost);
+    let calculatetotal = price.reduce( (a,b) => (a+b) );
+    return calculatetotal;
+    //console.log(calculatetotal);
+    //console.log(price);
+};
+  
+
 const main = async () => {
-  ex8();
+  ex9();
 };
 
 main();
