@@ -44,6 +44,10 @@ const ex6 = () => {
   console.log("Number of Strings: " + result.numStrings)
 };
 
+const ex7 = () => {
+    console.table(personList);
+  };
+
 //
 // Your functions here...
 
@@ -173,10 +177,16 @@ const countStrings = (array) => {
 };
  
 // exercise 7
-
+let person1 = { name: "Alice", age: 22 };
+  let person2 = { name: "Bob", age: 21 };
+  let person3 = { name: "Charlie", age: 23 };
+  let personList = [];
+   personList.push(person2);
+   personList.push(person1);
+   personList.push(person3);
 
 const main = async () => {
-  ex6();
+  ex7();
 };
 
 main();
