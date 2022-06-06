@@ -34,27 +34,23 @@ const ex6 = () => {
 //
 // Your functions here...
 //
+const countItems = (array) => {
 
-let countItems = (array) => {
-    let results = 0 
-    for (let i=0; i < array.length; i++){
-        if (typeof(i) == "number" || 'string' || "decimals") {
-            results += array[i]
+        let retval = {
+            numIntergers: 0,
+            numDecimals: 0,
+            numStrings: 0
+        }
+        retval.numIntergers = countNumbers(array)
+        retval.numDecimals = countDecimals(array)
+        retval.numStrings = countStrings(array)
+        return retval;
     }
-    return results
-}
 
-let countLetters = (array) => {
-    let finval = 0
-    for(let i = 0; i < array.length; i++){
-        finval += array[i].length          
-    }
-    return finval
-}
 
 let shortestString = (array) => {
-    let value = array.sort((a,b) => a.length + b.length)
-        return value[array.length - 3]
+    let value = array.sort((a, b) => a.length + b.length)
+    return value[array.length - 3]
 }
 
 let minNumber = (array) => {
