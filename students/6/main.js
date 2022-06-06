@@ -41,6 +41,7 @@ const ex7 = () => {
 }
 
 
+
 const peoplearray = (sortedpersons) => {      //ex7
     let person1 = { name: "Alice", age: 22 }
     let person2 = { name: "Bob", age: 21 }
