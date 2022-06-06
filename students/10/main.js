@@ -35,28 +35,62 @@ const ex6 = () => {
 // Your functions here...
 //
 
-const countItems = (array) => {
-    let countDecimalNumbers = 0;
-    let countStrings = 0;
-    let countIntegerNumbers = 0;
-    for(let i = 0; i < array.length; i++) {
-        if(typeof (array[i]) == "number" && Number.isInteger(array[i])){
-            countIntegerNumbers++;
+//ex7
+
+
+
+//ex6
+       const countItems = (array) => {
+        
+        let retval = {
+            numStrings: 0, 
+            numIntegers: 0,
+            numDecimals: 0
         }
-        if(typeof (array[i]) == "number" && !Number.isInteger(array[i])){
-            countDecimalNumbers++;
-        }
-        if(typeof(array[i])== "string"){
-            countStrings++;
-        }
-    }
-    return {
-        numIntegers: countIntegerNumbers,
-        numDecimals: countDecimalNumbers,
-        numStrings: countStrings
+        retval.numStrings =  countStrings(array);
+        retval.numIntegers = countIntegers(array);
+        retval.numDecimals = countDecimals(array);
+        return retval;
     }
     
+        
+    const countIntegers = array => { 
+        let numInt = 0;
+        for (let i = 0; i < array.length; i++) {
+            if(typeof (array[i]) == "number" && Number.isInteger(array[i])) {
+                numInt++;
+        }
+    }   
+    return numInt;
 }
+
+    const countDecimals = array => {
+        let numDec = 0;
+        for (let i = 0; i < array.length; i++) {
+            if(typeof (array[i]) == "number" && !Number.isInteger(array[i])) {
+               numDec++;
+        }
+    }   
+    return numDec;
+}        
+            
+const countStrings = array => {
+    let numStr = 0;
+    for (let i = 0; i < array.length; i++) {       
+            if(typeof(array[i]) == "string") {
+                numStr++;
+        }
+    }
+    return numStr;
+}
+
+        
+        
+    
+        
+    
+    
+
 
 
 //ex4
