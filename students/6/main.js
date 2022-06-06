@@ -31,8 +31,29 @@ const ex6 = () => {
     console.log("Number of Integers: " + result.countInt);
     console.log("Number of Decimal Numbers: " + result.countDec);
     console.log("Number of Strings: " + result.countStrings);
-};
+}
 
+
+
+const ex7 = () => {
+    const sortedpersons =[];   
+    console.table(peoplearray(sortedpersons));
+}
+
+
+const peoplearray = (sortedpersons) => {      //ex7
+    let person1 = { name: "Alice", age: 22 }
+    let person2 = { name: "Bob", age: 21 }
+    let person3 = { name: "Charlie", age: 23 }
+
+    sortedpersons.push(person1);
+    sortedpersons.push(person2);
+    sortedpersons.push(person3);
+
+    sortedpersons.sort((a, b) => (a. age - b. age));
+    return sortedpersons;
+}    
+ 
 
 const countItems = (array) => {         //ex6
     let value = {
@@ -44,7 +65,7 @@ const countItems = (array) => {         //ex6
     value.countDec = DecNumbers(array);
     value.countStrings = NumStrings(array);
     return value;
-};
+}
 
 
 const IntNumbers = (array) => {         //part of ex6
@@ -56,7 +77,7 @@ const IntNumbers = (array) => {         //part of ex6
     }
     return countInt;
 
-};
+}
 
 const DecNumbers = (array) => {         //part of ex6
     let countDec = 0;
@@ -67,7 +88,7 @@ const DecNumbers = (array) => {         //part of ex6
     }
     return countDec;
 
-};
+}
 
 const NumStrings = (array) => {         //part of ex6
     let countStrings = 0;
@@ -78,10 +99,10 @@ const NumStrings = (array) => {         //part of ex6
     }
     return countStrings;
 
-};
+}
 
 
-const countLetters = (array) => {  //ex4
+const countLetters = (array) => {       //ex4
     let counter = 0;
     for (let i = 0; i < array.length; i++) {
         counter += array[i].length
@@ -90,14 +111,14 @@ const countLetters = (array) => {  //ex4
 }
 
 
-const shortestString = (array) => {  //ex3
+const shortestString = (array) => {     //ex3
     let retval = array.sort((a, b) => b.length - a.length);
     return retval[array.length - 1];
 
 }
 
 
-const minNumber = (array) => {  //ex2
+const minNumber = (array) => {           //ex2
     let lowestvalue = array[0];
     for (let i of array) {
         if (typeof (i) == "number" && i < lowestvalue) {
@@ -109,7 +130,7 @@ const minNumber = (array) => {  //ex2
 }
 
 
-const countNumbers = (array) => {  //ex1
+const countNumbers = (array) => {       //ex1
     let retval = 0;
     for (let i of array) {
         if (typeof (i) == 'number' && !Number.isInteger(i)) {
@@ -120,7 +141,7 @@ const countNumbers = (array) => {  //ex1
 }
 
 const main = async () => {
-    ex6();
+    ex7();
 }
 
 main();
