@@ -40,10 +40,17 @@ const ex7 = () => {
 //
 // Your functions here...
 //
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+
+let everyone =[
+        { name: "Alice", age: 22 },
+        { name: "Bob", age: 21 },
+        { name: "Charlie", age: 23 }
+    ]
+const tableGen = () => {
+    everyone.push(("Alice", 22), ("Bob", 21), ("Charlie", 23))
+}   
+everyone.sort((a, b) => a.age - b.age);
+console.table(everyone);
 
 const countItems = (array) => {
     let retval = {
