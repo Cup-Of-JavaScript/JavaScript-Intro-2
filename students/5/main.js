@@ -36,6 +36,14 @@ const ex5 = () => {
   console.log("Number of Strings:" + numberOfStrings(array));
 };
 
+const ex6 = () => {
+  let array = ["this", "is", 1, 3, 2.1, "a", "test"];
+  let result = countItems(array);
+  console.log("Number of Integers: " + result.numIntegers)
+  console.log("Number of Decimal Numbers: " + result.numDecimals)
+  console.log("Number of Strings: " + result.numStrings)
+};
+
 //
 // Your functions here...
 
@@ -123,8 +131,52 @@ const numberOfStrings = (array) => {
   return strings;
 };
 
+//exercise 6
+const countItems = (array) =>{
+    let retval ={
+    numIntegers: 0,
+    numDecimals: 0,
+    numStrings: 0,
+    }
+    retval.numIntegers = countIntegerNumbers(array);
+    retval.numDecimals = countDecimalNumbers(array);
+    retval.numStrings = countStrings(array);
+    return retval; 
+}
+
+const countIntegerNumbers = (array) => {
+  let numIntegers = 0;
+  array.forEach((element) => {
+    if (typeof element === "number" && Number.isInteger(element)) {
+      numIntegers++;
+    }
+  });
+  return numIntegers;
+};
+const countDecimalNumbers = (array) => {
+  let numDecimals = 0;
+  array.forEach((element) => {
+    if (typeof element === "number" && !Number.isInteger(element)) {
+      numDecimals++;
+    }
+  });
+  return numDecimals;
+};
+const countStrings = (array) => {
+  let numStrings = 0;
+  array.forEach((element) => {
+    if (typeof element === "string") {
+       numStrings++;
+    }
+  });
+  return numStrings;
+};
+ 
+// exercise 7
+
+
 const main = async () => {
-  ex5();
+  ex6();
 };
 
 main();
