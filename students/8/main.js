@@ -59,8 +59,7 @@ const createPerson = (name, age) => {
     return {
         fullName: name,
         age: age,
-        // ...other properties
-    };
+    }
 }
 
 const countOver20 = (personArray) => {
