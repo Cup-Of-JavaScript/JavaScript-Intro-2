@@ -31,6 +31,12 @@ const ex6 = () => {
   console.log("Number of Strings: " + result.numStrings);
 };
 
+const ex7 = () => {
+  const peopleArray =[];
+  console.table(makepeople(peopleArray));
+}
+
+
 //
 // Your functions here...
 
@@ -110,9 +116,23 @@ const countnumStrings = (array) => {
   } );
    return numStrings;
 };
-const main = async () => {
-  ex6();
 
-};
+const makepeople = (peopleArray) => {
+  let person1 = { name: "Alice", age: 22 }
+  let person2 = { name: "Bob", age: 21 }
+  let person3 = { name: "Charlie", age: 23 }
+
+  peopleArray.push(person1);
+  peopleArray.push(person2);
+  peopleArray.push(person3);
+
+  peopleArray.sort((a, b) => (a.age > b.age) ? 1 : -1)
+  return peopleArray;
+
+}
+
+const main = async () => {
+  ex7();
+}
 
 main();
