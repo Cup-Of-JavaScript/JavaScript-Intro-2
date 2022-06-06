@@ -77,7 +77,7 @@ const countOver20 = (personArray) => {
         if (i.age > 20 && typeof i.age == 'number') {
             counter++;
         }
-    };
+    }
     return counter;
 }
 
