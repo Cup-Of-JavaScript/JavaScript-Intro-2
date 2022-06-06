@@ -40,24 +40,28 @@ const ex6 = () => {
 
 const ex7 = () => {
     const peopleArray =[];
-    console.log(makepeople(peopleArray));
+    console.table(makepeople(peopleArray));
 }
+
 //
 // Your functions here...
 //
 
 //Ex 7
 
-// const makepeople = (peopleArray) => {
-//     let person1 = { name: "Alice", age: 22 }
-//     let person2 = { name: "Bob", age: 21 }
-//     let person3 = { name: "Charlie", age: 23 }
+const makepeople = (peopleArray) => {
+    let person1 = { name: "Alice", age: 22 }
+    let person2 = { name: "Bob", age: 21 }
+    let person3 = { name: "Charlie", age: 23 }
  
-//     peopleArray.push(person1);
-//     peopleArray.push(person2);
-//     peopleArray.push(person3);
+    peopleArray.push(person1);
+    peopleArray.push(person2);
+    peopleArray.push(person3);
 
+    peopleArray.sort((a, b) => (a.age > b.age) ? 1 : -1)
+    return peopleArray;
 
+}
     // const getData = (tableName)  => {
     //     let retval = "No Data";
     //     if (tableName == "person") {
@@ -68,9 +72,6 @@ const ex7 = () => {
     //       ];
     //     }
 
-
-
-// }
 // const main = () => {     //For making the table and sorting alpha
 //     let table = "person";
 //     let personList = getData(table);
@@ -203,7 +204,7 @@ const countNumbers = (array) => {
 
 
 const main = async () => {
-    ex6();
+    ex7();
 }
 
 main();
