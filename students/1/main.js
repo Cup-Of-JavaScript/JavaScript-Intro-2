@@ -31,9 +31,30 @@ const ex6 = () => {
     console.log("Number of Strings: " + result.numStrings)
 }
 
+const ex7 = () => {
+    let person1 = { name: "Alice", age: 22 }
+    let person2 = { name: "Bob", age: 21 }
+    let person3 = { name: "Charlie", age: 23 }
+
+    let everyone = [];
+    everyone.push(person1);
+    everyone.push(person2);
+    everyone.push(person3);
+   
+    everyone.sort((a, b) => a.age - b.age);
+    console.table(everyone);
+    // displayPeople(everyone);
+}
+
 //
 // Your functions here...
 //
+
+const displayPeople = (everyone) => {
+    everyone.sort((a, b) => a.age - b.age);
+    console.table(everyone);
+}
+
 const countItems = (array) => {
     let retval = {
         numIntegers: 0,
@@ -102,7 +123,7 @@ let countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex6();
+    ex7();
 }
 
 main();
