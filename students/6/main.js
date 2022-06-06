@@ -1,7 +1,7 @@
 //
 // File: main.js
 // Date: 5/24/2022
-// 
+// skipped ex5 per instructor
 
 const ex1 = () => {
     const array = [1, '2', 3, 'test', 1.2, 2.2, 4, '2.3', 2.4, 3, 39.1, '2311', 23.11];
@@ -25,23 +25,79 @@ const ex4 = () => {
 }
 
 
-const countLetters = (array) => {
+const ex6 = () => {
+    let array = ["this", "is", 1, 3, 2.1, "a", "test"];
+    let result = countItems(array);
+    console.log("Number of Integers: " + result.countInt);
+    console.log("Number of Decimal Numbers: " + result.countDec);
+    console.log("Number of Strings: " + result.countStrings);
+};
+
+
+const countItems = (array) => {         //ex6
+    let value = {
+        countInt: 0,
+        countStrings: 0,
+        countDec: 0
+    };
+    value.countInt = IntNumbers(array);
+    value.countDec = DecNumbers(array);
+    value.countStrings = NumStrings(array);
+    return value;
+};
+
+
+const IntNumbers = (array) => {         //part of ex6
+    let countInt = 0;
+    for (let i of array) {
+        if (typeof (i) === 'number' && Number.isInteger(i)) {
+            countInt++;
+        }
+    }
+    return countInt;
+
+};
+
+const DecNumbers = (array) => {         //part of ex6
+    let countDec = 0;
+    for (let i of array) {
+        if (typeof (i) == 'number' && !Number.isInteger(i)) {
+            countDec++;
+        }
+    }
+    return countDec;
+
+};
+
+const NumStrings = (array) => {         //part of ex6
+    let countStrings = 0;
+    for (let i of array) {
+        if (typeof (i) == 'string') {
+            countStrings++;
+        }
+    }
+    return countStrings;
+
+};
+
+
+const countLetters = (array) => {  //ex4
     let counter = 0;
-    for(let i=0; i<array.length; i++){
-        counter += array[i].length   
+    for (let i = 0; i < array.length; i++) {
+        counter += array[i].length
     }
     return counter;
 }
 
 
-const shortestString = (array) => {
-    let retval = array.sort((a,b) => b.length - a.length);
-       return retval[array.length - 1];
+const shortestString = (array) => {  //ex3
+    let retval = array.sort((a, b) => b.length - a.length);
+    return retval[array.length - 1];
 
 }
 
 
-const minNumber = (array) => {
+const minNumber = (array) => {  //ex2
     let lowestvalue = array[0];
     for (let i of array) {
         if (typeof (i) == "number" && i < lowestvalue) {
@@ -53,7 +109,7 @@ const minNumber = (array) => {
 }
 
 
-const countNumbers = (array) => {
+const countNumbers = (array) => {  //ex1
     let retval = 0;
     for (let i of array) {
         if (typeof (i) == 'number' && !Number.isInteger(i)) {
@@ -64,7 +120,7 @@ const countNumbers = (array) => {
 }
 
 const main = async () => {
-   ex4();
+    ex6();
 }
 
 main();
