@@ -31,9 +31,20 @@ const ex6 = () => {
     console.log("Number of Strings: " + result.numStrings)
 }
 
+const ex7 = () => {
+    let person1 = { name: "Alice", age: 22 }
+    let person2 = { name: "Bob", age: 21 }
+    let person3 = { name: "Charlie", age: 23 }
+}
+
 //
 // Your functions here...
 //
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
 const countItems = (array) => {
     let retval = {
         numIntegers: 0,
@@ -102,7 +113,7 @@ let countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex6();
+    ex7();
 }
 
 main();
