@@ -70,7 +70,7 @@ const countOver20 = (personArray) => {
     personArray.push(p1)
     personArray.push(p2)
     personArray.push(p3)
-    //  return personArray;
+
 
     let counter = 0;
     for (let i of personArray) {
