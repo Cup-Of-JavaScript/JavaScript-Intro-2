@@ -36,9 +36,42 @@ const ex7 = () => {
     console.table(objList(groupArray));
 }
 
+const ex8 = () => {
+    let p1 = createPerson("Alice", 11)
+    let p2 = createPerson("Bob", 22)
+    let p3 = createPerson("Charlie", 33)
+
+    let personArray = [];
+    personArray.push(p1)
+    personArray.push(p2)
+    personArray.push(p3)
+
+    console.log(countOver20(personArray));
+}
+
 //
 // Your functions here...
 //
+
+//ex8
+const createPerson = (name, age) => {
+    let retval = {
+        fullName: name,
+        age: age
+      }
+      return retval;
+};
+
+const countOver20 = (peopleArray) => {
+    let count = 0;
+    for(let i of peopleArray) {
+        if(typeof (i.age) == "number" && i.age > 20) {
+            count++;
+        }
+    }   
+    return count;
+}
+
 
 //ex7
 const objList = (groupArray) => {
@@ -53,12 +86,6 @@ const objList = (groupArray) => {
     groupArray.sort((a, b) => (a.age - b.age))
     return groupArray;
 }
-        
-       
-
-        
-
-
 
 //ex6
        const countItems = (array) => {
@@ -149,7 +176,7 @@ const countNumbers = (array) =>{
 }
 
 const main = async () => {
-    ex7();
+    ex8();
 }
 
 main();
