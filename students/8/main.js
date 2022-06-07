@@ -75,20 +75,15 @@ const calcCellBillForPerson = (usageData, person) => {
     let personBill = {}
     let personCharge = 0
     let MinuteCharge = { PerMinuteCharge: 0.1 }
-    // for (let { userId, minutes: m } of usageData) 
-    for (let i = 0; i < usageData.length; i++) 
-    {
-        if (usageData[i].userId === person.userId)
-        {
+    for (let i = 0; i < usageData.length; i++) {
+        if (usageData[i].userId === person.userId) {
             personCharge = formatCurrency(usageData[i].minutes * 0.1)
             let total = { charges: personCharge }
             let minutes = { minutes: usageData[i].minutes }
             let personBill = Object.assign(person, usageData[i].minutes, minutes, MinuteCharge, total)
-            return personBill;
+            return personBill
         }
-        
     }
-  
 }
 
 
