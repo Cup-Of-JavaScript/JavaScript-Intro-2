@@ -31,6 +31,21 @@ const ex6 = () => {
     console.log("Number of Decimal Numbers: " + result.numDecimals)
     console.log("Number of Strings: " + result.numStrings)
 }
+
+
+const ex6 = () => {
+    let p1 = createPerson("Alice", 11)
+    let p2 = createPerson("Bob", 22)
+    let p3 = createPerson("Charlie", 33)
+
+    let personArray = [];
+    personArray.push(p1)
+    personArray.push(p2)
+    personArray.push(p3)
+}
+
+
+console.log(countOver20(personArray))
 //
 // Your functions here...
 //
@@ -78,44 +93,44 @@ const countStrings = (array) => {
 
 };
 
-    // EX 4
-    const countLetters = (array) => {
-        let newArray = array.join('');
-        return newArray.length;
-    }
+// EX 4
+const countLetters = (array) => {
+    let newArray = array.join('');
+    return newArray.length;
+}
 
 
-    // EX 3
-    const shortestString = (array) => {
-        let retval = array.reduce((a, b) => a.length <= b.length ? a : b)
-        return retval
-    }
+// EX 3
+const shortestString = (array) => {
+    let retval = array.reduce((a, b) => a.length <= b.length ? a : b)
+    return retval
+}
 
 
-    // EX 2
-    const minNumber = (array) => {
-        let smallestNum = array[0];
-        for (let i of array) {
-            if (Number.isInteger(i) && i < smallestNum) {
-                smallestNum = i
-            }
+// EX 2
+const minNumber = (array) => {
+    let smallestNum = array[0];
+    for (let i of array) {
+        if (Number.isInteger(i) && i < smallestNum) {
+            smallestNum = i
         }
-        return smallestNum
     }
+    return smallestNum
+}
 
 
-    // EX 1
-    const countNumbers = (array) => {
-        let retval = 0;
-        for (let i = 0; i < array.length; i++) {
-            if (typeof (i) == "number" || !Number.isInteger(i)) {
-            }
+// EX 1
+const countNumbers = (array) => {
+    let retval = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof (i) == "number" || !Number.isInteger(i)) {
         }
-        retval++
-        return retval
     }
-    const main = async () => {
-        ex6();
-    }
+    retval++
+    return retval
+}
+const main = async () => {
+    ex6();
+}
 
-    main();
+main();
