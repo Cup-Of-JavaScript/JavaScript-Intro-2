@@ -40,15 +40,41 @@ const ex7 = () => {
     everyone.push(person1);
     everyone.push(person2);
     everyone.push(person3);
-   
+
     everyone.sort((a, b) => a.age - b.age);
     console.table(everyone);
     // displayPeople(everyone);
 }
 
+const ex8 = () => {
+    let p1 = createPerson("Alice", 11)
+    let p2 = createPerson("Bob", 22)
+    let p3 = createPerson("Charlie", 33)
+
+    let personArray = [];
+    personArray.push(p1)
+    personArray.push(p2)
+    personArray.push(p3)
+
+    console.log(countOver20(personArray))
+}
+
 //
 // Your functions here...
 //
+const createPerson = (name, age) => {
+    return { fullName: name, age: age }
+}
+
+const countOver20 = (personArray) => {
+    let tally = 0;
+    for (let i = 0; i < personArray.length; i++) {
+        if (personArray[i].age > 20) {
+            tally++
+        }
+    }
+    return tally;
+}
 
 const displayPeople = (everyone) => {
     everyone.sort((a, b) => a.age - b.age);
@@ -79,7 +105,7 @@ const countIntegers = (array) => {
 const countDecimals = (array) => {
     let decimal = 0;
     for (let i = 0; i < array.length; i++) {
-        if (typeof (array[i]) === "number"  && !Number.isInteger(array[i])) {
+        if (typeof (array[i]) === "number" && !Number.isInteger(array[i])) {
             decimal++
         }
     }
@@ -123,7 +149,7 @@ let countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex7();
+    ex8();
 }
 
 main();
