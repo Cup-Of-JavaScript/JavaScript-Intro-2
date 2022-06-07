@@ -34,12 +34,12 @@ const ex6 = () => {
 }
 
 const ex7 = () => {
-    const sortedpersons =[];   
+    const sortedpersons = [];
     console.table(peoplearray(sortedpersons));
 }
 
 const ex8 = () => {
-    let p1 = createPerson("Alice", 20)
+    let p1 = createPerson("Alice", 11)
     let p2 = createPerson("Bob", 22)
     let p3 = createPerson("Charlie", 33)
 
@@ -53,15 +53,15 @@ const ex8 = () => {
 
 const createPerson = (name, age) => {         //ex8
     return {
-        fullName: name, 
+        fullName: name,
         age: age
-    } 
+    }
 }
- 
+
 const countOver20 = (personArray) => {          // part of ex8
     let counter = 0;
-    for (let i of personArray){
-        if (i.age >= 20){
+    for (let i of personArray) {
+        if (i.age >= 20) {
             counter++;
         }
     }
@@ -74,16 +74,16 @@ const peoplearray = (sortedpersons) => {      //ex7
     let person1 = { name: "Alice", age: 22 }
     let person2 = { name: "Bob", age: 21 }
     let person3 = { name: "Charlie", age: 23 }
-    
+
     sortedpersons.push(person1);
     sortedpersons.push(person2);
     sortedpersons.push(person3);
 
-    sortedpersons.sort((a, b) => (a. age - b. age));
+    sortedpersons.sort((a, b) => (a.age - b.age));
     return sortedpersons;
-   
-}    
- 
+
+}
+
 
 const countItems = (array) => {         //ex6
     let value = {
