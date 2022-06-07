@@ -189,28 +189,64 @@ const calculateTotal = array => {
     return total;
 }
 
-
 const ex10 = () => {
-
+    let usageData = [
+        { userId: 1111, minutes: 10.0 },
+        { userId: 2222, minutes: 20.0 },
+        { userId: 3333, minutes: 30.0 }
+    ]
+    
+    let person = { userId: 3333, fullName: "Charlie" }
+    let result = calcCellBillForPerson(usageData, person)
+    console.log(result)
+    
 }
 
-let usageData = [
-    { userId: 1111, minutes: 10.0 },
-    { userId: 2222, minutes: 20.0 },
-    { userId: 3333, minutes: 30.0 }
-]
+//   minutes: 30,
+//   perMinuteCharge: 0.1,
+//   charges: '$3.00'
+// const calcCellBillForPerson = (usageData, person) => {
+//     let total = {}
+//     for (let i of usageData) {
+//         if(i.userID == person.userID) {
+//           let minute = {minutes: usageData.minutes},
+//           let perMinuteCharge = {0.1},
+//           let  charges = {'$3.00'}
+//         }
+//     };
+//     return total
+// }
+const calcCellBillForPerson = (usageData, person) => {
+    let bill = {};
+    let charge = 0;
+    let minute = { PerMinuteCharge: 0.1 };
+     for (let i of usageData) {
+        if(i.userID == person.userID) {
+            charge = formatCurrency(usageData.minutes * 0.1);
+            let total = { charges: charge };
 
-let person = { userId: 3333, fullName: "Charlie" }
-let result = calcCellBillForPerson(usageData, person)
-console.log(result)
+            let minutes = { minutes: [usageData].minutes };
+            console.log(minutes)
 
-const calcCellBillForPerson = () => {
+            let bill= Object.assign(
+            person,
+            usageData.minutes,
+            minutes,
+            minute,
+            total
+            );
+                return bill;
+        }
+    }
+  }
 
-}
-
+  const formatCurrency = (dollarAmount) => {
+      let formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+      return formatter.format(dollarAmount)
+  }
 
 const main = async () => {
-    ex9();
+    ex10();
 }
 
 main();
