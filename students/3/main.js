@@ -36,47 +36,86 @@ const ex6 = () => {
 //
 
 // EX 6
-
-
-
-// EX 4
-const countLetters = (array) => {
-    let newArray = array.join('');
-    return newArray.length;
+const countItems = (array) => {
+    let retval = {
+        numIntegers: 0,
+        numDecimals: 0,
+        numStrings: 0
+    }
+    retval.numIntegers = countNumbers(array);
+    retval.numDecimals = countDecimals(array);
+    retval.numStrings = countStrings(array);
+    return retval;
 }
 
-
-// EX 3
-const shortestString = (array) => {
-    let retval = array.reduce((a, b) => a.length <= b.length ? a : b)
-    return retval
-}
-
-
-// EX 2
-const minNumber = (array) => {
-    let smallestNum = array[0];
+const countNums = (array) => {
     for (let i of array) {
-        if (Number.isInteger(i) && i < smallestNum) {
-            smallestNum = i
+        if (typeof i === 'number' && Number.isInteger(i)) {
+            decimal++
         }
     }
-    return smallestNum
+    return decimal
 }
 
-
-// EX 1
-const countNumbers = (array) => {
-    let retval = 0;
-    for (let i = 0; i < array.length; i++) {
-        if (typeof (i) == "number" || !Number.isInteger(i)) {
+const countDecimals = (array) => {
+    let countDecimals = 0;
+    for (let i of array) {
+        if (typeof (i) == 'number' && !Number.isInteger(i)) {
+            countDecimals++;
         }
     }
-    retval++
-    return retval
-}
-const main = async () => {
-    ex4();
-}
+    return countDecimals
+};
 
-main();
+const countStrings = (array) => {
+    let countStrings = 0;
+    for (let i of array) {
+        if (typeof (i) == 'string') {
+            countStrings++;
+        }
+    }
+    return countStrings;
+
+};
+
+    // EX 4
+    const countLetters = (array) => {
+        let newArray = array.join('');
+        return newArray.length;
+    }
+
+
+    // EX 3
+    const shortestString = (array) => {
+        let retval = array.reduce((a, b) => a.length <= b.length ? a : b)
+        return retval
+    }
+
+
+    // EX 2
+    const minNumber = (array) => {
+        let smallestNum = array[0];
+        for (let i of array) {
+            if (Number.isInteger(i) && i < smallestNum) {
+                smallestNum = i
+            }
+        }
+        return smallestNum
+    }
+
+
+    // EX 1
+    const countNumbers = (array) => {
+        let retval = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (typeof (i) == "number" || !Number.isInteger(i)) {
+            }
+        }
+        retval++
+        return retval
+    }
+    const main = async () => {
+        ex6();
+    }
+
+    main();
