@@ -18,10 +18,23 @@ const formatCurrency = (dollarAmount) => {
  }
   
  main();*/
- function identity(name = "John", age = 25) {
+ /*function identity(name = "John", age = 25) {
 
     console.log (name, " ", age);
     
     }
     
     identity("harris", 40);
+    const createPerson = (name, age);
+    let p1 = createPerson("Alice", 11)
+    let p2 = createPerson("Bob", 22)
+    let p3 = createPerson("Charlie", 33)
+
+    let personArray = [];
+    personArray.push(p1)
+    personArray.push(p2)
+    personArray.push(p3)
+    
+    console.table(personArray);
+*/
+

@@ -33,11 +33,39 @@ const ex6 = () => {
     console.log("Number of Strings: " + result.countStrings);
 }
 
-
-
 const ex7 = () => {
-    const sortedpersons =[];   
+    const sortedpersons = [];
     console.table(peoplearray(sortedpersons));
+}
+
+const ex8 = () => {
+    let p1 = createPerson("Alice", 11)
+    let p2 = createPerson("Bob", 22)
+    let p3 = createPerson("Charlie", 33)
+
+    let personArray = [];
+    personArray.push(p1)
+    personArray.push(p2)
+    personArray.push(p3)
+
+    console.log(countOver20(personArray))
+}
+
+const createPerson = (name, age) => {         //ex8
+    return {
+        fullName: name,
+        age: age
+    }
+}
+
+const countOver20 = (personArray) => {          // part of ex8
+    let counter = 0;
+    for (let i of personArray) {
+        if (i.age >= 20) {
+            counter++;
+        }
+    }
+    return counter;
 }
 
 
@@ -51,10 +79,11 @@ const peoplearray = (sortedpersons) => {      //ex7
     sortedpersons.push(person2);
     sortedpersons.push(person3);
 
-    sortedpersons.sort((a, b) => (a. age - b. age));
+    sortedpersons.sort((a, b) => (a.age - b.age));
     return sortedpersons;
-}    
- 
+
+}
+
 
 const countItems = (array) => {         //ex6
     let value = {
@@ -142,7 +171,7 @@ const countNumbers = (array) => {       //ex1
 }
 
 const main = async () => {
-    ex7();
+    ex8();
 }
 
 main();
