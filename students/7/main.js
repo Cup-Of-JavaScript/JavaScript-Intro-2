@@ -165,8 +165,33 @@ const createPerson = (name, age) => {
     return count
 }
 
+	
+const ex9 = () => {
+    let item1 = { quantity: 1, cost: 1.00 }
+    let item2 = { quantity: 2, cost: 2.00 }
+    let item3 = { quantity: 3, cost: 3.00 }
+
+    let array = [];
+    array.push(item1)
+    array.push(item2)
+    array.push(item3)
+
+    //console.log(array)
+    console.log(calculateTotal(array))
+}
+
+
+const calculateTotal = array => {
+    let total = 0;
+    for (let i of array) {
+        total += [i.cost] * [i.quantity] ;
+    }
+    return total;
+}
+
+
 const main = async () => {
-    ex8();
+    ex9();
 }
 
 main();
