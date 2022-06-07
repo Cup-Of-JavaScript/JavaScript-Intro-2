@@ -202,20 +202,6 @@ const ex10 = () => {
     
 }
 
-//   minutes: 30,
-//   perMinuteCharge: 0.1,
-//   charges: '$3.00'
-// const calcCellBillForPerson = (usageData, person) => {
-//     let total = {}
-//     for (let i of usageData) {
-//         if(i.userID == person.userID) {
-//           let minute = {minutes: usageData.minutes},
-//           let perMinuteCharge = {0.1},
-//           let  charges = {'$3.00'}
-//         }
-//     };
-//     return total
-// }
 const calcCellBillForPerson = (usageData, person) => {
     let bill = {};
     let charge = 0;
@@ -226,9 +212,9 @@ const calcCellBillForPerson = (usageData, person) => {
             let total = { charges: charge };
 
             let minutes = { minutes: [usageData].minutes };
-            console.log(minutes)
+            // console.log(minutes)
 
-            let bill= Object.assign(
+            let bill= Object.assign (
             person,
             usageData.minutes,
             minutes,
