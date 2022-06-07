@@ -53,10 +53,49 @@ const ex9 = () => {
     console.log(calculateTotal(itemArray))
 }
 
+const ex10 = () => {
+    let usageData = [
+        { userId: 1111, minutes: 10.0 },
+        { userId: 2222, minutes: 20.0 },
+        { userId: 3333, minutes: 30.0 }
+    ]
+
+    let person = { userId: 3333, fullName: "Charlie" }
+    let result = calcCellBillForPerson(usageData, person)
+    console.log(result)
+}
+
 //
 // Your functions here...
 //
 
+//Ex10
+
+const calcCellBillForPerson = (usageData, person) => {
+    let personBill = {}
+    let personCharge = 0
+    let MinuteCharge = { PerMinuteCharge: 0.1 }
+    // for (let { userId, minutes: m } of usageData) 
+    for (let i = 0; i < usageData.length; i++) 
+    {
+        if (usageData[i].userId === person.userId)
+        {
+            personCharge = formatCurrency(usageData[i].minutes * 0.1)
+            let total = { charges: personCharge }
+            let minutes = { minutes: usageData[i].minutes }
+            let personBill = Object.assign(person, usageData[i].minutes, minutes, MinuteCharge, total)
+            return personBill;
+        }
+        
+    }
+  
+}
+
+
+const formatCurrency = (dollarAmount) => {
+    let formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+    return formatter.format(dollarAmount)
+}
 
 //Ex 9
 
@@ -248,7 +287,7 @@ const countNumbers = (array) => {
 
 
 const main = async () => {
-    ex9();
+    ex10();
 }
 
 main();
