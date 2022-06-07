@@ -51,6 +51,33 @@ const ex8 = () => {
     console.log(countOver20(personArray))
 }
 
+
+const ex9 = () => {
+    let array = [];
+    console.log(calculateTotal(array));
+}
+
+
+
+const calculateTotal = (array) => {
+    let item1 = { quantity: 1, cost: 1.00 }
+    let item2 = { quantity: 2, cost: 2.00 }
+    let item3 = { quantity: 3, cost: 3.00 }
+
+    array.push(item1)
+    array.push(item2)
+    array.push(item3)
+
+    let amount = 0;
+    for (let i of array) {
+        amount += i.quantity * i.cost
+    }
+    return amount;
+
+}
+
+
+
 const createPerson = (name, age) => {         //ex8
     return {
         fullName: name,
@@ -171,7 +198,7 @@ const countNumbers = (array) => {       //ex1
 }
 
 const main = async () => {
-    ex8();
+    ex9();
 }
 
 main();
