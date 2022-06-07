@@ -190,6 +190,25 @@ const calculateTotal = array => {
 }
 
 
+const ex10 = () => {
+
+}
+
+let usageData = [
+    { userId: 1111, minutes: 10.0 },
+    { userId: 2222, minutes: 20.0 },
+    { userId: 3333, minutes: 30.0 }
+]
+
+let person = { userId: 3333, fullName: "Charlie" }
+let result = calcCellBillForPerson(usageData, person)
+console.log(result)
+
+const calcCellBillForPerson = () => {
+
+}
+
+
 const main = async () => {
     ex9();
 }
