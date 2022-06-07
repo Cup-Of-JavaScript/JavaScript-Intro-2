@@ -184,7 +184,7 @@ const ex9 = () => {
 const calculateTotal = array => {
     let total = 0;
     for (let i of array) {
-        total += [i.quantity] * [i.cost];
+        total += [i.cost] * [i.quantity] ;
     }
     return total;
 }
