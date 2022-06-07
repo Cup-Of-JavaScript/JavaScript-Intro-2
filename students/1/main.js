@@ -66,26 +66,28 @@ const ex9 = () => {
 
     let allItems = [];
     allItems.push(item1)
-    allItems.push(item1)
-    allItems.push(item1)
-
+    allItems.push(item2)
+    allItems.push(item3)
     console.log(calculateTotal(allItems))
-    return { Quantity: quantity, Cost: cost}
-
+    //return { quantity: quantity, cost: cost}
+}
 
 //
 // Your functions here...
 //
 
+/*const _items = (quantity, cost) => {
+   
+}*/
+
 const calculateTotal = (allItems) => {
     let finTotal = 0
     for (let i = 0; i < allItems.length; i++) {
-        if (typeof (i) == 'number' ){
-            finTotal += Quantity + Cost
-        }
+        finTotal += allItems[i].quantity * allItems[i].cost // { quantity: 1, cost: 1.00 }
+    }
+    return finTotal
 }
-return finTotal
-}
+
 const createPerson = (name, age) => {
     return { fullName: name, age: age }
 }
