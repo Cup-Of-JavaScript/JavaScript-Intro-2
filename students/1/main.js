@@ -69,21 +69,31 @@ const ex9 = () => {
     allItems.push(item2)
     allItems.push(item3)
     console.log(calculateTotal(allItems))
-    //return { quantity: quantity, cost: cost}
 }
 
+const ex10 = () => {
+let usageData = [
+    { userId: 1111, minutes: 10.0 },
+    { userId: 2222, minutes: 20.0 },
+    { userId: 3333, minutes: 30.0 }
+]
+
+let person = { userId: 3333, fullName: "Charlie" }
+let result = calcCellBillForPerson(usageData, person)
+console.log(result)
+}
 //
 // Your functions here...
 //
 
-/*const _items = (quantity, cost) => {
-   
-}*/
+const calcCellBillForPerson = (usageData, person) => {
+    
+}
 
 const calculateTotal = (allItems) => {
     let finTotal = 0
     for (let i = 0; i < allItems.length; i++) {
-        finTotal += allItems[i].quantity * allItems[i].cost // { quantity: 1, cost: 1.00 }
+        finTotal += allItems[i].quantity * allItems[i].cost 
     }
     return finTotal
 }
@@ -175,7 +185,7 @@ let countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex9();
+    ex10();
 }
 
 main();
