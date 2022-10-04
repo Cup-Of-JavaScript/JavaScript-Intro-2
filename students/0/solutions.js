@@ -3,7 +3,7 @@
 // Date: 1/13/2022
 // 
 
-import Calculator from '../classes/Calculator.js';
+import Calculator from '../../classes/Calculator.js';
 
 const ex1 = () => {
     console.log('*** Ex. 1 ***');

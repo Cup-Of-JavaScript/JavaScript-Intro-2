@@ -1,5 +1,9 @@
 # Modern JavaScript for React Developers Assignments
 
+## Ex. 0
+Modernize [this](./modern-js.js) JavaScript file.  Replace the legacy functions with arrow functions and replace var with either let or const.  There's a function signature that isn't right. Can you find it and fix it?
+When you are finished, place this file in your student directory and submit a PR.
+
 ## Ex. 1
 Create an arrow function called `countNumbers` that takes an array and
 returns the number of numbers in it.
