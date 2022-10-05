@@ -66,6 +66,8 @@ const shocking = (number) => {
     return 'hello';
 }
 
+const addNumbers = (a,b) => (a+b) // return short cut.
+
 //////////////////////////////////////////////////////////////////////////
 // Topics
 /////////////////////////////////////////////////////////////////////////
@@ -73,6 +75,8 @@ const shocking = (number) => {
 shocking();
 shocking('test');
 shocking(1, 'test', 22.2, 'hello there', 12345);
+console.log(`The result is: ${addNumbers(1,2)}.`)
+
 //
 oldFunc1();
 newFunc1();
