@@ -66,7 +66,7 @@ const shocking = (number) => {
     return 'hello';
 }
 
-const addNumbers = (a,b) => (a+b) // return short cut.
+const addNumbers = (a, b) => (a + b) // No need to type: { return a + b }
 
 //////////////////////////////////////////////////////////////////////////
 // Topics
