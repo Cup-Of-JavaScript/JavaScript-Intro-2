@@ -4,7 +4,7 @@
 // Desc: To run, execute: node loops-operators
 //
 
-const loops = () => {
+const forLoops = () => {
     
     // Classic for loop.
     for (let i = 0; i < 3; i++) {
@@ -12,7 +12,7 @@ const loops = () => {
     }
     console.log("*".repeat(5));
 
-    // For in Loop.
+    // For-in Loop.
     const person = { fname: "John", lname: "Doe", age:25 };
     let text = "";
     for (let x in person) { // Key
@@ -21,8 +21,8 @@ const loops = () => {
     console.log(text);
     console.log("*".repeat(5));
 
-    // For of.
-    const fruits = ['banna', 'apple', 'orange'];
+    // For-of.
+    const fruits = ['bannana', 'apple', 'orange'];
     let text2 = "";
     for (let f of fruits) {
        console.log(f);
@@ -38,6 +38,15 @@ const loops = () => {
     }
     console.log("*".repeat(5));
 
+    // ForEach.  NOTE: ForEach does NOT await!  Use a for-of instead!
+    const cars = ['ford', 'chevy', 'dodge']
+    cars.forEach(c => {
+        console.log(c)
+        // await doWork() // await won't work here.
+    })
+}
+
+const whileLoops = () => {
     // while loop.
     let i = 0;  // <== Note this i does not "conflict" with the i on line 9. (Scope)
     while (i < 3) {
@@ -98,6 +107,7 @@ const shortCircuit = () => {
 // Topics
 /////////////////////////////////////////////////////////////////////////
 
-loops();
+forLoops();
+//whileLoops();
 //operatorPrecendence();
 //shortCircuit();
