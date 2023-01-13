@@ -48,7 +48,7 @@ const forLoops = () => {
 
 const whileLoops = () => {
     // while loop.
-    let i = 0;  // <== Note this i does not "conflict" with the i on line 9. (Scope)
+    let i = 0;
     while (i < 3) {
         console.log(i);
         i++;
