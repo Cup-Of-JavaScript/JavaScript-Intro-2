@@ -7,7 +7,7 @@
 
 const arrays = () => {
   const numbers = ["one", "two", "three"];
-  const numbers2 = ["one", 2, "three", 4]; // Weekly typed.
+  const numbers2 = ["one", 2, "three", 4]; // Weakly typed.
   const numbers3 = [1, 2, 3, 4];
 
   console.log(numbers2[0]);
@@ -52,7 +52,7 @@ const dictionaries = () => {
   };
 
   usersDictionary[3333] = { name: "David Banner" }; // Dynamically add a user.
-  usersDictionary["4444"] = { name: "Ellie Kemper" }; // Weekly typed.
+  usersDictionary["4444"] = { name: "Ellie Kemper" }; // Weakly typed.
 
   console.log(dictionary1.firstName);
   console.log(dictionary1.lastName);

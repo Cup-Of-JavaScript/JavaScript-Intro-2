@@ -118,18 +118,13 @@ const equality = () => {
         console.log('HERE!!!')
     }
 
-    //
-    // Future thoughts...
-    //
-
-    // *** React use reference equality to detect changes in State ***
-    // React does not consider this (below) to be a change because c 
-    // points to the  head of the array.  In order for React to detect this 
-    // change a new array must be built.
+    // React use reference equality to detect changes in state.
+    // Using the spread operator changes the head of the array, 
+    // and React will detect this array as being changed.
 
     let c = [1,2,3];
     c.push(4); 
-    c = [...c]; // Must do something like this (spread operator).
+    c = [...c];
 }
 
 //////////////////////////////////////////////////////////////////////////

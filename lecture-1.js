@@ -52,7 +52,7 @@ const main = (number, string) => {
 
 
 // Arrays
-// Weekly typed.
+// Weakly typed.
 const a = ['apples', 'oranges', 11, true];
 
 console.log(a);
