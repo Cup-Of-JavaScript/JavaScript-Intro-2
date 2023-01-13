@@ -5,7 +5,7 @@
 //
 
 const ifElse = () => {
-    let a = 1;
+    let a = 1
     if (a == 1) {
         console.log('It is equal')
     }
@@ -14,6 +14,14 @@ const ifElse = () => {
         console.log('here')
     } else {
         console.log('over here')
+    }
+
+    if (a == 2) {
+        console.log('here')
+    } else if (a == 3) {
+        console.log('now here')
+    } else {
+        console.log('now end')
     }
 }
 
