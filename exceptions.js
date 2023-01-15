@@ -25,9 +25,9 @@ const main = () => {
         if (Err instanceof DataError) {
             console.log(Err)
         }
-        // if (Err instanceof Error) {
-        //    console.log(Err)
-        // }
+        if (Err instanceof Error) {
+           console.log("Here")
+        }
     }
 }
 
