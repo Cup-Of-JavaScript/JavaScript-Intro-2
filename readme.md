@@ -44,6 +44,7 @@ Assignment repo that describes modern JavaScript with a focus on frontend React 
 - [Classes](classes.js)
 - [Promises/Async](promises-async-await.js)
 - [Functional Programming](functional-programming.js)
+- [Exceptions](exceptions.js)
 
 # W3 Schools Topics
 - [Variables](https://www.w3schools.com/js/js_variables.asp)
