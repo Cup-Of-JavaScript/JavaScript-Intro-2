@@ -14,21 +14,20 @@ class DataError extends Error {
 
 const main = () => {
     try {
-        //throw new Error("test")
-        throw new ValidationError('bomb')
-        //throw new DataError('data')
+        //throw new Error("I am broken.")
+        //throw new ValidationError('Firstname is required.')
+        throw new DataError('Foreign key error.')
     }
     catch (Err) {
         if (Err instanceof ValidationError) {
-            console.log("ValidationError")
+            console.log(Err)
         }
         if (Err instanceof DataError) {
-            console.log("Data")
+            console.log(Err)
         }
         // if (Err instanceof Error) {
-        //     console.log("ERROR")
+        //    console.log(Err)
         // }
-        
     }
 }
 
