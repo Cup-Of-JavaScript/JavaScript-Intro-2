@@ -18,7 +18,7 @@ const main = () => {
         //throw new ValidationError('Firstname is required.')
         throw new FileParsingError('Missing id for input file.')
     }
-    catch (Err) {
+    catch (Err) { // Other languages support catching the type of the exception.
         if (Err instanceof ValidationError) {
             console.log(Err)
         }
