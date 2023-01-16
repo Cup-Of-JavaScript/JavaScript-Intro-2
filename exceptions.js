@@ -5,10 +5,10 @@ class ValidationError extends Error {
     }
 }
 
-class DataError extends Error {
+class FileParsingError extends Error {
     constructor(message) {
       super(message)
-      this.name = "DataError"
+      this.name = "FileParsingError"
     }
 }
 
@@ -16,13 +16,13 @@ const main = () => {
     try {
         //throw new Error("I am broken.")
         //throw new ValidationError('Firstname is required.')
-        throw new DataError('Foreign key error.')
+        throw new FileParsingError('Missing id for input file.')
     }
     catch (Err) {
         if (Err instanceof ValidationError) {
             console.log(Err)
         }
-        if (Err instanceof DataError) {
+        if (Err instanceof FileParsingError) {
             console.log(Err)
         }
         if (Err instanceof Error) {
