@@ -3,12 +3,11 @@
 // Date: 3/21/2022
 // Desc: To run, execute: node destructuring-spread
 //
+//
+// Destructuring: Pulling a small thing out of a much larger thing.
+//
 
 const destructuring = () => {
-
-    //
-    // Destructuring: Pulling a small thing out of a much larger thing.
-    //
 
     // Our nicely structured object.
     let person = {
@@ -20,11 +19,8 @@ const destructuring = () => {
     let fn = person.firstName;
     let ln = person.lastName;
 
-    // New way...
-    // Curly braces indicate we want to pull (destructure) the 
-    // firstName out of the nicely structured object.
+    // Destructure: pluck the firstName out of the person object.
     let { firstName } = person; 
-
     console.log(firstName)
     
     // Another example...
@@ -52,5 +48,5 @@ const spread = () => {
 // Topics
 /////////////////////////////////////////////////////////////////////////
 
-// destructuring();
-spread();
+destructuring();
+//spread();
